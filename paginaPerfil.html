@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tPerfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+
+    <style>
+        article {
+            background-color: #FFC466;
+            height: 500px;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+        }
+
+        #alinhamento-main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #icones-animais {
+            background-color: #FFEFDF;
+            height: 500px;
+        }
+
+        #texto-avatar{
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .divisao-icones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .icone-animais {
+            height: 80px;
+            border-radius: 50%;
+            background-color: #800080;
+            padding-top: 5px;
+        }
+
+        .quadrado-section{
+            height: 450px;
+            width: 250px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href="2.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="">Doações</a></li>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra"></a></li>
+            </ul>
+
+        </section>
+    </header>
+
+    <!-- <nav>
+        <form action="">
+            <input type="text" id="idbusca" placeholder="📍Animal/País">
+            <button id="botao-buscar">🔍Buscar</button>
+            <h1 id="textoMain">Texto</h1>
+        </form>
+    </nav> -->
+
+    <main>
+
+        <article>
+            <figure id="quadrado-atras"></figure>
+
+        <section id="alinhamento-main">
+            <!-- Perfil com foto -->
+            <section>
+                <figure class="quadrado-section"></figure>
+            </section>
+            
+            <!-- formulario -->
+            <section>
+                <figure class="quadrado-section"></figure>
+            </section>
+
+            <!-- Idiomas -->
+            <section>
+                <figure class="quadrado-section"></figure>
+            </section>
+        </section>
+        </article>
+
+        <section>
+            <h1 id="texto-avatar">Avatares</h1>
+            
+                <div class="divisao-icones">
+                    <img src="img/animais/ZebraFundoClean.png" alt="" class="icone-animais">
+                    <img src="img/animais/imageDragadoDeKomodo.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemAguia.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemArara.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemAvestrus.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemCavalo.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemChipanze.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemCoruja.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemElefante.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemGirafa.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemGorila.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemGuepardo.png" alt="" class="icone-animais">
+                </div>
+                <div class="divisao-icones">
+                    <img src="img/animais/imagemHipopotamo.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemLeao.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemLhama.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemOnca.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemPanda.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemPavao.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemPenguin.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemPombo.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemRinoceronte.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemTataruga.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemTubarao.png" alt="" class="icone-animais">
+                    <img src="img/animais/imagemUrsoPolar.png" alt="" class="icone-animais">
+                </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="divMaior-footer">
+            <h1>Obrigado por ajudar os animais!!!</h1>
+        </div>
+
+        <div class="divsMenores-footer">
+            <h1>Contact info</h1>
+            <ul>
+                <li>endereco</li>
+                <li>email</li>
+                <li>telefone</li>
+            </ul>
+        </div>
+
+        <div class="divsMenores-footer">
+            <h1>Mensagem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, doloribus unde voluptatem nobis porro
+                eveniet impedit voluptatibus quisquam dolor nemo fuga, temporibus illo nulla tenetur! Iste quibusdam
+                sequi dolorem accusamus.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

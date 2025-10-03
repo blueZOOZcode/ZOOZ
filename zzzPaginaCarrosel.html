@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+    
+    <style>
+        /* temporario carrosel*/
+        #quadradosTemporarios{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .quadrados{
+            height: 300px;
+            width: 600px;
+            background-color: red;
+            border-radius: 30px;
+        }
+         /* temporario carrosel */
+
+        /* #divisao-main{
+            height: 115px;
+            background-color: #FFEFDF;
+            opacity: 80%;
+            
+        } */
+        
+        #container-zologico{
+            margin-top: 250px;
+            height: 225px;
+            background-color: #FFC466;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .imagens-zologico{
+            height: 180px;
+        }
+
+        #imagenMenor-zologico{
+            height: 260px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href=""><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                <li class="texto-header"><a href="">Favoritos</a></li>
+                <li class="texto-header"><a href="">Doações</a></li>
+                <li id="last"><a href=""><img id="icone-avatar" src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra"></a></li>
+            </ul>
+
+        </section>
+    </header>
+
+    <nav>
+        <form action="">
+            <input type="text" id="idbusca" placeholder="📍Animal/País">
+            <button id="botao-buscar">🔍Buscar</button>
+            <h1 id="textoMain">Perto de você</h1>
+        </form>
+    </nav>
+
+    <main>
+        <article id="carrossel">
+            <figure class="quadrado-atras">
+                <div id="quadradosTemporarios">
+                    <p class="quadrados">a</p>
+                    <p class="quadrados">a</p>
+                    <p class="quadrados">a</p>
+                </div>
+            </figure>
+        </article>
+
+        <section>
+            <div id="container-zologico">
+                <img class="imagens-zologico" src="img/zologicos/ZooSPLogo.svg.png" alt="Logo Zoo São Paulo">
+                <img id="imagenMenor-zologico" src="img/zologicos/ZologicoDeSalvadorLogo.png" alt="Logo Zologico De Salvador">
+                <img class="imagens-zologico" src="img/zologicos/JauParqueNacionalLogo.png" alt="Logo Jaú Parque Nacional">
+            </div>
+        </section>
+
+        <footer>
+            <div id="divMaior-footer">
+                <h1>Obrigado por ajudar os animais!!!</h1>
+            </div>
+
+            <div class="divsMenores-footer">
+                <h1>Contact info</h1>
+                <ul>
+                    <li>endereco</li>
+                    <li>email</li>
+                    <li>telefone</li>
+                </ul>
+            </div>
+
+            <div class="divsMenores-footer">
+                <h1>Mensagem</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, doloribus unde voluptatem nobis porro eveniet impedit voluptatibus quisquam dolor nemo fuga, temporibus illo nulla tenetur! Iste quibusdam sequi dolorem accusamus.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

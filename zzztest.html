@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="template.css">
+
+    <style>
+        nav {
+            padding-bottom: 30px;
+        }
+
+        /* figure vai ser o flex container */
+        .quadrado-atras {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px; /* espaço entre aside e section */
+        }
+
+        aside {
+            flex: 2; /* ocupa mais espaço */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap; /* se não couber, quebra */
+        }
+
+        #conteudo-ladoDireito {
+            flex: 1; /* ocupa menos espaço */
+            max-width: 400px;
+        }
+
+        .imagem-paises {
+            height: 360px;
+            width: 250px;
+            border-radius: 30px;
+        }
+
+        .container-pais h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href=""><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                <li class="texto-header"><a href="">Favoritos</a></li>
+                <li class="texto-header"><a href="">Doações</a></li>
+                <li id="last"><a href=""><img id="icone-avatar" src="img/ZebraFundoClean.png" alt="Imagem Zebra"></a></li>
+            </ul>
+        </section>
+    </header>
+
+    <nav>
+        <form action="">
+            <input type="text" id="idbusca" placeholder="📍Animal/País">
+            <button id="botao-buscar">🔍Buscar</button>
+            <h1 id="textoMain">Procurar</h1>
+        </form>
+    </nav>
+    
+    <main>
+        <article>
+            <figure class="quadrado-atras">
+                <aside>
+                    <section>
+                        <div class="container-pais">
+                            <img class="imagem-paises" src="img/imgpaises/australiaFlag.png" alt="">
+                            <h2>Austrália</h2>
+                        </div>
+                        <div class="container-pais">
+                            <img class="imagem-paises" src="img/imgpaises/argentinaFlag.png" alt="">
+                            <h2>Argentina</h2>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <div class="container-pais">
+                            <img class="imagem-paises" src="img/imgpaises/brasilFlag.png" alt="">
+                            <h2>Brasil</h2>
+                        </div>
+                        <div class="container-pais">
+                            <img class="imagem-paises" src="img/imgpaises/tanzaniaFlag.png" alt="">
+                            <h2>Tanzânia</h2>
+                        </div>
+                    </section>
+            
+                    <section>
+                        <div class="container-pais">
+                            <img class="imagem-paises" src="img/imgpaises/antarticaFlag.png" alt="">
+                            <h2>Antártida</h2>
+                        </div>
+                        <div class="container-pais">
+                            <img class="imagem-paises" src="img/imgpaises/chinaFlag.png" alt="">
+                            <h2>China</h2>
+                        </div>
+                    </section>
+                </aside>
+
+                <section id="conteudo-ladoDireito">
+                    <img style="height: 200px;" src="img/imgpaises/brasilFlag.png" alt="">
+                </section>
+            </figure>
+        <article>
+    </main>
+</body>
+</html>
