@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="Css/index.css">
 
     <style>
+        *{
+            margin: 0;
+        }
         article {
             background-color: #FFC466;
             height: 500px;
@@ -55,10 +58,35 @@
             padding-top: 5px;
         }
 
-        .quadrado-section{
-            height: 450px;
+        .quadrado-section-foto-perfil{
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            height: 350px;
+            width: 332px;
+            background: #f4a526;
+            border-radius: 40px;
+            flex-direction: column;
+            
+        }
+        .quadrado-section-foto-perfil > img{
+            margin: auto;
+            height: 208px;
             width: 250px;
-            background: red;
+            background-color: #840484;
+            border-radius: 15px;
+        
+        }
+        .quadrado-section-foto-perfil > p{
+            margin-left: 50px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            font-style: bold;
+            color: white;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 5px black;
+            
+            
         }
     </style>
 </head>
@@ -90,19 +118,22 @@
             <figure id="quadrado-atras"></figure>
 
         <section id="alinhamento-main">
+            <a href=""></a>
             <!-- Perfil com foto -->
             <section>
-                <figure class="quadrado-section"></figure>
+                <figure class="quadrado-section-foto-perfil"><img src="img/animais/ZebraFundoClean.png" alt="zebra"><p>Rdgzin</p></figure>
+                
+                
             </section>
             
             <!-- formulario -->
             <section>
-                <figure class="quadrado-section"></figure>
+                <figure class="quadrado-section-foto-perfil"></figure>
             </section>
 
             <!-- Idiomas -->
             <section>
-                <figure class="quadrado-section"></figure>
+                <figure class="quadrado-section-foto-perfil"></figure>
             </section>
         </section>
         </article>
