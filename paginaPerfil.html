@@ -84,10 +84,39 @@
             font-style: bold;
             color: white;
             font-family: sans-serif;
-            text-shadow: 2px 2px 5px black;
-            
-            
+            text-shadow: 2px 2px 5px black;  
         }
+        .quadrado-section-escrito{
+            height: 350px;
+            width: 332px;
+            color: white;
+            font-style: bold;
+        }
+        .quadrado-section-escrito>p{
+            color: white;
+            font-style: bold;
+            font-family: sans-serif;
+            font-size: 1.3em;
+        }
+        .quadrado-section-escrito > input{
+            border-radius: 25px;
+            width: 100%;
+            padding: 8px;
+            border: 0;
+            box-shadow: 2px 2px 5px #af6e05;
+            margin-bottom: 30px;
+        }
+        #pais{
+            border-radius: 25px;
+            width: 348px;
+            height: 33px;
+                        
+            border: 0;
+            box-shadow: 2px 2px 5px #af6e05;
+            margin-bottom: 30px;
+        }
+        
+
     </style>
 </head>
 
@@ -128,7 +157,30 @@
             
             <!-- formulario -->
             <section>
-                <figure class="quadrado-section-foto-perfil"></figure>
+                <figure class="quadrado-section-escrito">
+                    <p>Nome:</p>
+                    <input type="text" placeholder="Seu Nome">
+                    
+                    <p>País:</p>
+                    <select name="pais" id="pais">
+                    <option value="África do Sul">África do Sul</option>
+                    <option value="Alemanha">Alemanha</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Austrália">Austrália</option>
+                    <option value="Bélgica">Bélgica</option>
+                    <option value="Bélgica">Bélgica</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Canadá">Canadá</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Colômbia">Colômbia</option>
+                    <option value="Espanha">Espanha</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="França">França</option>
+                    <option value="Itália">Itália</option>
+                    <option value="Japão">Japão</option>
+                    </select>
+                </figure>
             </section>
 
             <!-- Idiomas -->
