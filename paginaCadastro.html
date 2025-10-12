@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <link rel="stylesheet" href="Css/index.css">
+    <style>
+        *{
+            margin: 0;
+        }
+        main{
+            background-color: #fff;
+        }
+
+        #container-pagina{
+            display: flex;
+            flex-direction: row;
+            /* min-height: 100vh; */
+        }
+
+        #container-cadastro{
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #login{
+            background-color: white;
+            border-radius: 70px;
+            height: 700px;
+            width: 700px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        img{
+            min-height: 100vh;
+        }
+
+        #container-imagem{
+
+        }
+
+        #texto-login{
+            display: flex;
+            justify-content: center;
+            color: #FF9D00;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="container-pagina">
+
+            <section id="container-cadastro">
+
+
+                <section id="login">
+                    <h1 id="texto-login">Login</h1>
+                    <form action="" id="formulario">
+                        <label for="email">Email:</label>
+                        <input type="text" class="input-formulario" name="email" required>
+
+                        <label for="senha">Senha:</label>
+                        <input type="text" class="input-formulario" name="senha" required>
+
+                        <button>Entrar</button>
+                    </form>
+                </section>
+
+
+            </section>
+
+
+
+            <section id="container-imagem">
+                <img src="img/foto_cadastro/foto_cadastro.png" alt="">
+            </section>
+
+        </section>
+    </main>
+</body>
+</html>
