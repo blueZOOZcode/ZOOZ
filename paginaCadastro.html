@@ -1,71 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-        <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/index.css">
     <style>
-        *{
+        * {
             margin: 0;
         }
-        main{
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            z-index: 10;
+        }
+
+        header #logo {
+            position: absolute;
+            height: 110px;
+            /* Tamanho pequeno para a logo */
+            width: auto;
+        }
+
+        main {
             background-color: #fff;
         }
 
-        #container-pagina{
+        #container-pagina {
             display: flex;
             flex-direction: row;
-            /* min-height: 100vh; */
+            min-height: 100vh;
         }
 
-        #container-cadastro{
+        #imagem-direita {
+            min-height: 100vh;
+        }
+
+        #container-cadastro {
             flex: 2;
             display: flex;
             align-items: center;
             justify-content: center;
+            /* ver se este comando esta fazendo alguma coisa */
+            /* position: relative;  */
         }
 
-        #login{
+        #login {
             background-color: white;
             border-radius: 70px;
-            height: 700px;
+            height: 750px;
             width: 700px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            position: relative;
         }
 
-        img{
-            min-height: 100vh;
-        }
-
-        #container-imagem{
-
-        }
-
-        #texto-login{
+        #texto-login {
             display: flex;
             justify-content: center;
             color: #FF9D00;
             font-size: 70px;
+            margin-top: 50px;
+        }
+
+        #formulario {
+            margin-top: 47px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-formulario {
+            height: 50px;
+            width: 532px;
+            border-radius: 70px;
+            border: 1px solid #FF9D00;
+            /* box-shadow: 0px 1px 1px #000000a6; */
+            padding-top: 10px;
+        }
+
+        .input-formulario:not(:placeholder-shown) {
+            height: 50px;
+            width: 532px;
+            border-radius: 70px;
+            border: 1px solid #FF9D00;
+            /* box-shadow: 0px 1px 1px #000000a6; */
+            padding-top: 10px;
+            font-size: 1.5em;
+            text-indent: 25px;
+            padding-bottom: 4px;
+        }
+
+        form .label-formulario {
+            font-size: 30px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+            width: 73%;
+        }
+
+        #senha {
+            margin-top: 50px;
+        }
+
+        #container-conectado {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .label-conectado {
+            font-size: 20px;
+            font-weight: normal;
+
+        }
+
+        #caixa-manter {
+            margin-right: 20px;
+            transform: scale(2);
+            accent-color: #FF9D00;
+            cursor: pointer;
+        }
+
+        button {
+            margin-top: 70px;
+            height: 63px;
+            width: 532px;
+            border-radius: 70px;
+            background-color: #FF9D00;
+            font-size: 27px;
+            color: white;
+            border: 0;
         }
     </style>
 </head>
+
 <body>
+
+    <header>
+        <img id="logo" src="img/logoZooZ-Photoroom.png" alt="Logo Zooz">
+    </header>
+
     <main>
         <section id="container-pagina">
 
             <section id="container-cadastro">
-
+                
 
                 <section id="login">
                     <h1 id="texto-login">Login</h1>
                     <form action="" id="formulario">
-                        <label for="email">Email:</label>
+                        <label for="email" class="label-formulario">E-mail:</label>
                         <input type="text" class="input-formulario" name="email" required>
 
-                        <label for="senha">Senha:</label>
+                        <label for="senha" class="label-formulario" id="senha">Senha:</label>
                         <input type="text" class="input-formulario" name="senha" required>
+
+                        <section id="container-conectado">
+                            <section>
+                                <input type="checkbox" id="caixa-manter" class="label-conectado" name="caixa-conectado"
+                                    value="1">
+                                <label for="caixa-manter" class="label-conectado">Manter-se conectado </label>
+                            </section>
+                            <a href="" class="label-conectado">Criar conta?</a>
+                        </section>
 
                         <button>Entrar</button>
                     </form>
@@ -74,13 +184,12 @@
 
             </section>
 
-
-
             <section id="container-imagem">
-                <img src="img/foto_cadastro/foto_cadastro.png" alt="">
+                <img id="imagem-direita" src="img/foto_cadastro/foto_cadastro.png" alt="Imagem animais">
             </section>
 
         </section>
     </main>
 </body>
+
 </html>
