@@ -17,22 +17,21 @@
         body {
             height: 100%;
             overflow: hidden;
-            font-size: 16px;
+            font-size: 100%;
+            /* 16px base */
         }
 
         header {
             position: absolute;
-            top: 1.25rem;
-            /* 20px */
-            left: 2.5rem;
-            /* 40px */
+            top: 2%;
+            left: 2.5%;
             z-index: 10;
         }
 
         header #logo {
             position: absolute;
             height: 6.875rem;
-            /* 110px */
+            /* 110px → 6.875rem */
             width: auto;
         }
 
@@ -43,17 +42,11 @@
         #container-pagina {
             display: flex;
             flex-direction: row;
-            height: 100vh;
-        }
-
-        #container-imagem {
-            flex: 1.1;
+            min-height: 100vh;
         }
 
         #imagem-direita {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
+            min-height: 100vh;
         }
 
         #container-cadastro {
@@ -63,17 +56,16 @@
             justify-content: center;
         }
 
-        /* CARD DO LOGIN */
+        /* ---- Caixa de login ---- */
         #login {
             background-color: white;
             border-radius: 4.375rem;
-            /* 70px */
-            height: 53.125rem;
-            /* 850px */
+            /* 70px → 4.375rem */
+            height: 46.875rem;
+            /* 750px → 46.875rem */
             width: 43.75rem;
-            /* 700px */
+            /* 700px → 43.75rem */
             box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
-            /* 8px 20px */
             display: flex;
             flex-direction: column;
             position: relative;
@@ -82,16 +74,16 @@
         #texto-login {
             display: flex;
             justify-content: center;
-            color: #FF9D00;
+            color: #ff9d00;
             font-size: 4.375rem;
-            /* 70px */
-            margin-top: 3rem;
-            /* 30px */
+            /* 70px → 4.375rem */
+            margin-top: 3.125rem;
+            /* 50px → 3.125rem */
         }
 
         #formulario {
-            margin-top: 2rem;
-            /* 20px */
+            margin-top: 2.9375rem;
+            /* 47px → 2.9375rem */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -99,97 +91,92 @@
 
         .input-formulario {
             height: 3.125rem;
-            /* 50px */
+            /* 50px → 3.125rem */
             width: 33.25rem;
-            /* 532px */
+            /* 532px → 33.25rem */
             border-radius: 4.375rem;
-            /* 70px */
-            border: 0.063rem solid #FF9D00;
-            /* 1px */
+            /* 70px → 4.375rem */
+            border: 1px solid #ff9d00;
             padding-top: 0.625rem;
-            /* 10px */
+            /* 10px → 0.625rem */
         }
 
         .input-formulario:not(:placeholder-shown) {
             height: 3.125rem;
             width: 33.25rem;
             border-radius: 4.375rem;
-            border: 0.063rem solid #FF9D00;
+            border: 1px solid #ff9d00;
             padding-top: 0.625rem;
-            font-size: 1.5em;
-            text-indent: 1.563rem;
-            /* 25px */
+            font-size: 1.5rem;
+            /* 24px → 1.5rem */
+            text-indent: 1.5625rem;
+            /* 25px → 1.5625rem */
             padding-bottom: 0.25rem;
-            /* 4px */
-        }
-
-        .input-formulario::placeholder {
-            height: 3.125rem;
-            width: 33.25rem;
-            padding-top: 0.625rem;
-            font-size: 2em;
-            text-indent: 1.563rem;
-            padding-bottom: 0.25rem;
+            /* 4px → 0.25rem */
         }
 
         form .label-formulario {
             font-size: 1.875rem;
-            /* 30px */
+            /* 30px → 1.875rem */
             margin-bottom: 0.625rem;
-            /* 10px */
+            /* 10px → 0.625rem */
             display: block;
             text-align: left;
             width: 73%;
         }
 
-        .espaco-label {
-            margin-top: 1.25rem;
-            /* 20px */
+        #senha {
+            margin-top: 3.125rem;
+            /* 50px → 3.125rem */
         }
 
         #container-conectado {
+            margin-top: 2.5rem;
+            /* 40px → 2.5rem */
             width: 100%;
-            max-width: 32.375rem;
-            /* 518px */
-            margin-top: 1.25rem;
-            /* 20px */
-            text-align: right;
+            display: flex;
+            justify-content: space-around;
         }
 
         .label-conectado {
-            font-size: 1.3rem;
+            font-size: 1.25rem;
+            /* 20px → 1.25rem */
             font-weight: normal;
-            text-decoration: none;
         }
 
-        button {
-            margin-top: 2.5rem;
-            /* 40px */
-            height: 3.9375rem;
-            /* 63px */
-            width: 100%;
-            max-width: 33.25rem;
-            /* 532px */
-            border-radius: 4.375rem;
-            /* 70px */
-            background-color: #FF9D00;
-            font-size: 1.7rem;
-            color: white;
-            border: none;
+        #caixa-manter {
+            margin-right: 1.25rem;
+            /* 20px → 1.25rem */
+            transform: scale(2);
+            accent-color: #ff9d00;
             cursor: pointer;
         }
 
-        /* FUNDO DECORATIVO */
+        button {
+            margin-top: 4.375rem;
+            /* 70px → 4.375rem */
+            height: 3.9375rem;
+            /* 63px → 3.9375rem */
+            width: 33.25rem;
+            /* 532px → 33.25rem */
+            border-radius: 4.375rem;
+            /* 70px → 4.375rem */
+            background-color: #ff9d00;
+            font-size: 1.6875rem;
+            /* 27px → 1.6875rem */
+            color: white;
+            border: 0;
+        }
+
+        /* ---- Fundo ---- */
         #circulo-fundo {
             position: absolute;
-            background-color: #FFDAB5;
-            height: 120vh;
-            width: 70vh;
+            background-color: #ffdab5;
+            height: 68.75rem;
+            /* 110vh proporcional */
+            width: 40%;
             border-top-right-radius: 1000%;
             border-bottom-right-radius: 67%;
-            top: 0;
-            left: 0;
-            z-index: 0;
         }
     </style>
 </head>
@@ -209,28 +196,24 @@
 
 
                 <section id="login">
-                    <h1 id="texto-login">Cadastre-se</h1>
+                    <h1 id="texto-login">Login</h1>
                     <form action="" id="formulario">
-                        <label for="cpf" class="label-formulario">CPF:</label>
-                        <input type="text" class="input-formulario" name="cpf" required
-                            placeholder="ex:  111.111.111-11">
+                        <label for="email" class="label-formulario">E-mail:</label>
+                        <input type="text" class="input-formulario" name="email" required>
 
-                        <label for="nome" class="label-formulario espaco-label">Nome:</label>
-                        <input type="text" class="input-formulario" name="nome" required
-                            placeholder="Miguel Antonio Torres Diogo">
-
-                        <label for="email" class="label-formulario espaco-label">E-mail:</label>
-                        <input type="text" class="input-formulario" name="email" required
-                            placeholder="miguelantonio@gmail.com">
-
-                        <label for="senha" class="label-formulario espaco-label">Senha:</label>
-                        <input type="text" class="input-formulario" name="senha" required placeholder="Senha@123">
+                        <label for="senha" class="label-formulario" id="senha">Senha:</label>
+                        <input type="text" class="input-formulario" name="senha" required>
 
                         <section id="container-conectado">
-                            <a href="paginaLogin.html" class="label-conectado">Já possui uma conta?</a>
+                            <section>
+                                <input type="checkbox" id="caixa-manter" class="label-conectado" name="caixa-conectado"
+                                    value="1">
+                                <label for="caixa-manter" class="label-conectado">Manter-se conectado </label>
+                            </section>
+                            <a href="paginaCadastro.html" class="label-conectado">Criar conta?</a>
                         </section>
 
-                        <button>Concluir</button>
+                        <button>Entrar</button>
                     </form>
                 </section>
 
