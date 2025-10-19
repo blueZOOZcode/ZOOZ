@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="Css/index.css">
 
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             display: flex;
@@ -22,65 +23,75 @@
 
         main {
             flex: 1;
-            /* ocupa o espaço que sobra */
         }
 
         #formulario {
-            margin-top: 10px;
-            margin-left: 50px;
+            margin-top: 0.625rem;
+            margin-left: 3.125rem;
         }
 
         #textoMain {
-            padding-top: 0px;
+            padding-top: 0rem;
         }
 
         #container-zologico {
-            margin-top: 110px;
-            margin-left: 47px;
-            margin-right: 47px;
-            /* margin-bottom: 130px; */
-            height: 270px;
+            margin-top: 6.875rem;
+            margin-left: 2.9375rem;
+            margin-right: 2.9375rem;
+            height: 16.875rem;
             background-color: #FF9D00;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            border-radius: 70px;
+            flex-wrap: wrap;
+            border-radius: 4.375rem;
         }
 
         #imagenMaior-zologico {
-            width: 350px;
-            height: 80px;
+            width: 21.875rem;
+            height: auto;
+            height: 5rem;
+        }
+
+        #logo-salvador{
+            margin-left: -8.75rem;
         }
 
         .imagensMenor-zologico {
-            height: 260px;
+            height: 16.25rem;
+            width: auto;
+            max-width: 100%;
         }
 
         #pandaLogo {
             background-color: #fff;
             border-radius: 50%;
-            height: 200px;
+            height: 12.5rem;
+            width: auto;
+            max-width: 100%;
         }
 
         #container-animais {
-            margin-top: 110px;
-            margin-left: 47px;
-            margin-right: 47px;
-            /* margin-bottom: 130px; */
-            height: 270px;
+            margin-top: 6.875rem;
+            margin-left: 2.9375rem;
+            margin-right: 2.9375rem;
+            height: 16.875rem;
             background-color: #FF9D00;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            border-radius: 70px;
+            flex-wrap: wrap;
+            border-radius: 4.375rem;
         }
 
         .imagens-animais {
-            height: 200px;
-            width: 370px;
-            border-radius: 30px;
+            height: 12.5rem;
+            width: 23.125rem;
+            border-radius: 1.875rem;
+            object-fit: cover;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -98,7 +109,8 @@
                         <button id="botao-buscar">🔍Buscar</button>
                     </form>
                 </li>
-                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra"></a>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a>
                 </li>
             </ul>
 
@@ -118,8 +130,7 @@
         <section>
             <div id="container-zologico">
                 <img id="imagenMaior-zologico" src="img/zologicos/ufrgsLogo.png" alt="Logo UFRGS">
-                <img class="imagensMenor-zologico" src="img/zologicos/ZologicoDeSalvadorLogo.png"
-                    alt="Logo Zologico De Salvador">
+                <img class="imagensMenor-zologico" id="logo-salvador" src="img/zologicos/ZologicoDeSalvadorLogo.png" alt="Logo Zologico De Salvador">
                 <img id="pandaLogo" class="imagensMenor-zologico" src="img/zologicos/pandaLogo.png" alt="Logo Panda">
             </div>
         </section>
@@ -134,7 +145,7 @@
         </section>
     </main>
 
-    
+
     <footer>
         <div id="divMaior-footer">
             <h1>Obrigado por ajudar os animais!!!</h1>

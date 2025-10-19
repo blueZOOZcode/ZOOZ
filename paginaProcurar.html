@@ -17,29 +17,32 @@
             padding-bottom: 30px;
         }
 
-         /* figure vai ser o flex container */
+        /* figure vai ser o flex container */
         .quadrado-atras {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            gap: 20px; /* espaço entre aside e section */
+            gap: 20px;
+            /* espaço entre aside e section */
         }
 
-        article{
+        article {
             height: 840px;
         }
 
         aside {
-            flex: 2; /* ocupa mais espaço */
+            flex: 2;
+            /* ocupa mais espaço */
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            flex-wrap: wrap; /* se não couber, quebra */
+            flex-wrap: wrap;
+            /* se não couber, quebra */
         }
 
         #conteudo-ladoDireito {
-            flex: 1; /* ocupa menos espaço */
+            flex: 1;
             max-width: 400px;
         }
 
@@ -47,6 +50,7 @@
             height: 360px;
             width: 250px;
             border-radius: 30px;
+            object-fit: cover;
         }
 
         .container-pais h2 {
@@ -58,16 +62,18 @@
             margin-bottom: 50px;
         }
 
-        .imagens-direita{
+        .imagens-direita {
             width: 600px;
             height: 260px;
             border-radius: 30px;
             margin-right: 87px;
+            object-fit: cover;
         }
 
-         #div-direita section{
+        #div-direita section {
             margin-bottom: 30px;
-        } 
+        }
+
     </style>
 </head>
 
@@ -78,7 +84,8 @@
                 <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
                 <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
                 <li class="texto-header"><a href="">Doações</a></li>
-                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra"></a>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a>
                 </li>
             </ul>
 
@@ -100,81 +107,83 @@
                 <aside>
                     <section>
                         <div class="container-pais">
-                            <a href=""><img class="imagem-paises" src="img/imgpaises/australiaFlag.png" alt=""></a>
-                            
+                            <a href=""><img class="imagem-paises" src="img/imgpaises/australiaFlag.png"
+                                    alt="Bandeidira australia"></a>
                             <h2>Austrália</h2>
                         </div>
                         <div class="container-pais">
-                            <a href=""><img class="imagem-paises" src="img/imgpaises/argentinaFlag.png" alt=""></a>
-                            
+                            <a href=""><img class="imagem-paises" src="img/imgpaises/argentinaFlag.png"
+                                    alt="Bandeidira Argentina"></a>
                             <h2>Argentina</h2>
                         </div>
                     </section>
-                    
+
                     <section>
                         <div class="container-pais">
-                            <a href=""><img class="imagem-paises" src="img/imgpaises/brasilFlag.png" alt=""></a>
-                            
+                            <a href=""><img class="imagem-paises" src="img/imgpaises/brasilFlag.png"
+                                    alt="Bandeidira Brasil"></a>
                             <h2>Brasil</h2>
                         </div>
                         <div class="container-pais">
-                            <a href=""><img class="imagem-paises" src="img/imgpaises/tanzaniaFlag.png" alt=""></a>
-                            
+                            <a href=""><img class="imagem-paises" src="img/imgpaises/tanzaniaFlag.png"
+                                    alt="Bandeidira Tanzânia"></a>
                             <h2>Tanzânia</h2>
                         </div>
                     </section>
-            
+
                     <section>
                         <div class="container-pais">
-                            <a href=""><img class="imagem-paises" src="img/imgpaises/antarticaFlag.png" alt=""></a>
-                            
+                            <a href=""><img class="imagem-paises" src="img/imgpaises/antarticaFlag.png"
+                                    alt="Bandeidira Antártida"></a>
                             <h2>Antártida</h2>
                         </div>
                         <div class="container-pais">
-                            <a href=""><img class="imagem-paises" src="img/imgpaises/chinaFlag.png" alt=""></a>
-                            
+                            <a href=""><img class="imagem-paises" src="img/imgpaises/chinaFlag.png"
+                                    alt="Bandeidira China"></a>
                             <h2>China</h2>
                         </div>
                     </section>
                 </aside>
 
                 <div id="div-direita">
-                    <section id="conteudo-ladoDireito">
-                        <img class="imagens-direita" src="img/animaisNoZologico/penguinBando.png" alt="">
+                    <section id="conteudo-ladoDireito"> 
+                        <img class="imagens-direita" src="img/animaisNoZologico/penguinBando.png" alt="Imagem de de Penguins"> 
                     </section>
-    
+
                     <section>
-                        <img class="imagens-direita" src="img/animaisNoZologico/bodeDeitado.png" alt="">
+                        <img class="imagens-direita" src="img/animaisNoZologico/bodeDeitado.png" alt="Imagem de Bodes">
                     </section>
-                    
+
                     <section>
-                        <img class="imagens-direita" src="img/animaisNoZologico/bode1.png" alt="">
+                        <img class="imagens-direita" src="img/animaisNoZologico/bode1.png" alt="Imagem de Bodes">
                     </section>
                 </div>
             </figure>
-        <article>
+            <article>
     </main>
 
 
     <footer>
-            <div id="divMaior-footer">
-                <h1>Obrigado por ajudar os animais!!!</h1>
-            </div>
+        <div id="divMaior-footer">
+            <h1>Obrigado por ajudar os animais!!!</h1>
+        </div>
 
-            <div class="divsMenores-footer">
-                <h1>Contact info</h1>
-                <ul>
-                    <li>endereco</li>
-                    <li>email</li>
-                    <li>telefone</li>
-                </ul>
-            </div>
+        <div class="divsMenores-footer">
+            <h1>Contact info</h1>
+            <ul>
+                <li>endereco</li>
+                <li>email</li>
+                <li>telefone</li>
+            </ul>
+        </div>
 
-            <div class="divsMenores-footer">
-                <h1>Mensagem</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, doloribus unde voluptatem nobis porro eveniet impedit voluptatibus quisquam dolor nemo fuga, temporibus illo nulla tenetur! Iste quibusdam sequi dolorem accusamus.</p>
-            </div>
-        </footer>
+        <div class="divsMenores-footer">
+            <h1>Mensagem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, doloribus unde voluptatem nobis porro
+                eveniet impedit voluptatibus quisquam dolor nemo fuga, temporibus illo nulla tenetur! Iste quibusdam
+                sequi dolorem accusamus.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
