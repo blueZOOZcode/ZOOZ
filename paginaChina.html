@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+
+
+    <style>
+        header {
+            background-color: transparent;
+        }
+
+        nav {
+            background-color: transparent;
+        }
+
+        #imagem-fundo {
+            object-fit: cover;
+            position: absolute;
+            height: 60vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        #filtro-imagem {
+            background-color: #FF9D00;
+            object-fit: cover;
+            position: absolute;
+            height: 60vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 50%;
+        }
+
+        #texto-Main {
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+
+        #texto-Main h1 {
+            font-size: 20px;
+            color: white;
+        }
+
+        #container-imagem-animal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        #container-imagem-animal img {
+            border-radius: 30px;
+            display: block;
+        }
+
+        #imagem-maior img {
+            height: 720px;
+            width: auto;
+        }
+
+        #imagem-menor img{
+            height: 720px;
+            width: auto;
+        }
+
+        /* ---------------------------------- */
+        .card {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card .overlay {
+            height: 30%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 165, 0, 0.9);
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+
+        #imagem-menor .overlay{
+            height: 20%;
+        }
+
+        #imagem-maior h3{
+            font-size: 40px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        #imagem-maior p{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <figure><img src="img/imgpaises/chinaFlag.png" alt="" id="imagem-fundo"></figure>
+    <figure id="filtro-imagem"></figure>
+
+    <header>
+            <section>
+                <ul>
+                    <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                    <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                    <li class="texto-header"><a href="">Doações</a></li>
+                    <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar"
+                                src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra"></a></li>
+                </ul>
+            </section>
+        </header>
+
+        <nav>
+            <form action="">
+                <input type="text" class="idbusca" placeholder="📍Animal/País">
+                <button id="botao-buscar">🔍Buscar</button>
+                <h1 id="textoMain">China</h1>
+            </form>
+        </nav>
+
+        <main>
+            <section id="texto-Main">
+                <h1>Centro de Pesquisa e Criação de Pandas de Chengdu</h1>
+            </section>
+
+            <section id="container-imagem-animal">
+
+                <section class="card" id="imagem-maior">
+                    <img src="img/animaisPaginasBuscar/panda2.png" alt="">
+                    <div class="overlay">
+                        <h3>Oreo <span>🍪</span></h3>
+                        <p>Segundo o Zoológico Nacional Smithsonian, há cerca de 1 864 pandas-gigantes vivendo na natureza</p>
+                    </div>
+                </section>
+
+                <section class="card" id="imagem-menor">
+                    <img src="img/animaisPaginasBuscar/panda1.png" alt="">
+                    <div class="overlay">
+                        <h3>Oreo <span>🍪</span></h3>
+                        <p>Segundo o Zoológico Nacional Smithsonian, há cerca de 1 864 pandas-gigantes vivendo na natureza</p>
+                    </div>
+                </section>
+
+            </section>
+
+        </main>
+
+        <div id="footer"></div>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+
+            // fetch('header.html')
+            //     .then(response => response.text())
+            //     .then(data => {
+            //         document.getElementById('header').innerHTML = data;
+            //     });
+        </script>
+
+</body>
+
+</html>

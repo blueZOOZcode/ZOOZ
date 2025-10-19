@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tPerfil</title>
+    <title>Perfil</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="Css/index.css">
 
     <style>
-        *{
+        * {
             margin: 0;
         }
+
         article {
             background-color: #FFC466;
             height: 500px;
@@ -23,7 +24,7 @@
             border-bottom-right-radius: 70px;
         }
 
-        #alinhamento-main{
+        #alinhamento-main {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -34,7 +35,7 @@
             height: 500px;
         }
 
-        #texto-avatar{
+        #texto-avatar {
             display: flex;
             justify-content: center;
             font-weight: 700;
@@ -42,7 +43,7 @@
             margin-bottom: 30px;
         }
 
-        .divisao-icones{
+        .divisao-icones {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -58,7 +59,7 @@
             padding-top: 5px;
         }
 
-        .quadrado-section-foto-perfil{
+        .quadrado-section-foto-perfil {
             display: flex;
             justify-content: center;
             align-items: left;
@@ -67,38 +68,43 @@
             background: #f4a526;
             border-radius: 40px;
             flex-direction: column;
-            
+
         }
-        .quadrado-section-foto-perfil > img{
+
+        .quadrado-section-foto-perfil>img {
             margin: auto;
             height: 208px;
             width: 250px;
             background-color: #840484;
             border-radius: 15px;
-        
+
         }
-        .quadrado-section-foto-perfil > p{
+
+        .quadrado-section-foto-perfil>p {
             margin-left: 50px;
             margin-bottom: 20px;
             font-size: 2em;
             font-style: bold;
             color: white;
             font-family: sans-serif;
-            text-shadow: 2px 2px 5px rgb(0, 0, 0);  
+            text-shadow: 2px 2px 5px rgb(0, 0, 0);
         }
-        .quadrado-section-escrito{
+
+        .quadrado-section-escrito {
             height: 350px;
             width: 332px;
             color: white;
             font-style: bold;
         }
-        .quadrado-section-escrito>p{
+
+        .quadrado-section-escrito>p {
             color: white;
             font-style: bold;
             font-family: sans-serif;
             font-size: 1.3em;
         }
-        .quadrado-section-escrito > input{
+
+        .quadrado-section-escrito>input {
             border-radius: 25px;
             width: 100%;
             padding: 8px;
@@ -106,26 +112,29 @@
             box-shadow: 2px 2px 5px #af6e05;
             margin-bottom: 30px;
         }
-        #pais{
+
+        #pais {
             border-radius: 25px;
             width: 348px;
             height: 33px;
-                        
+
             border: 0;
             box-shadow: 2px 2px 5px #af6e05;
             margin-bottom: 30px;
         }
-        #Descrição{
+
+        #Descrição {
             border-radius: 25px;
             width: 348px;
             height: 200px;
             resize: none;
             box-shadow: 2px 2px 5px #af6e05;
-           border: 0; 
-           text-indent: 2px;
-           padding-bottom: 4px;
+            border: 0;
+            text-indent: 2px;
+            padding-bottom: 4px;
         }
-        #Descrição:not(:placeholder-shown){
+
+        #Descrição:not(:placeholder-shown) {
             height: 200px;
             width: 348px;
             border-radius: 25px;
@@ -135,7 +144,8 @@
             text-indent: 14px;
             padding-bottom: 4px;
         }
-        .quadrado-section-paises > p{
+
+        .quadrado-section-paises>p {
             text-align: center;
             color: white;
             font-size: 2.5em;
@@ -143,32 +153,33 @@
             font-weight: 600;
 
         }
+
         .flags-container {
             display: grid;
             grid-template-columns: repeat(3, 100px);
             gap: 20px;
             justify-content: center;
-    }
-    .flag {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.2s;
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-    }
-    .flag:hover {
-      transform: scale(1.1);
-    }
-    .flag img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-        
-        
+        }
 
+        .flag {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .flag:hover {
+            transform: scale(1.1);
+        }
+
+        .flag img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -179,138 +190,129 @@
                 <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
                 <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
                 <li class="texto-header"><a href="">Doações</a></li>
-                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra"></a></li>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a></li>
             </ul>
 
         </section>
     </header>
 
-    
+
 
     <main>
 
         <article>
             <figure id="quadrado-atras"></figure>
 
-        <section id="alinhamento-main">
-            <a href=""></a>
-            <!-- Perfil com foto -->
-            <section>
-                <figure class="quadrado-section-foto-perfil"><img src="img/animais/ZebraFundoClean.png" alt="zebra"><p>Rdgzin</p></figure>
-                
-                
-            </section>
-            
-            <!-- formulario -->
-            <section>
-                <figure class="quadrado-section-escrito">
-                    <p>Nome:</p>
-                    <input type="text" placeholder="Seu Nome">
-                    
-                    <p>País:</p>
-                    <select name="pais" id="pais">
-                    <option value="África do Sul" selected disabled >Selecione um país:</option>
-                    <option value="África do Sul">África do Sul</option>
-                    <option value="Alemanha">Alemanha</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Austrália">Austrália</option>
-                    <option value="Bélgica">Bélgica</option>
-                    <option value="Bélgica">Bélgica</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Canadá">Canadá</option>
-                    <option value="Chile">Chile</option>
-                    <option value="China">China</option>
-                    <option value="Colômbia">Colômbia</option>
-                    <option value="Espanha">Espanha</option>
-                    <option value="Estados Unidos">Estados Unidos</option>
-                    <option value="França">França</option>
-                    <option value="Itália">Itália</option>
-                    <option value="Japão">Japão</option>
-                    </select>
+            <section id="alinhamento-main">
+                <a href=""></a>
+                <!-- Perfil com foto -->
+                <section>
+                    <figure class="quadrado-section-foto-perfil"><img src="img/animais/ZebraFundoClean.png" alt="zebra">
+                        <p>Rdgzin</p>
+                    </figure>
 
-                    <p>Descrição:</p>
-                    <textarea name="Descrição" id="Descrição" placeholder="   Olá eu me chamo..."></textarea>
-                    
-                </figure>
-            </section>
 
-            <!-- Idiomas -->
-            <section>
-                <figure class="quadrado-section-paises">
-                    <p>Idiomas:</p>
-                    <div class="flags-container">
-                        <div class="flag"><img src="https://flagcdn.com/w320/es.png" alt="Espanhol"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/us.png" alt="Inglês"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/br.png" alt="Português"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/cn.png" alt="Chinês"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/fr.png" alt="Francês"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/it.png" alt="Italiano"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/de.png" alt="Alemão"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/sa.png" alt="Árabe"></div>
-                        <div class="flag"><img src="https://flagcdn.com/w320/in.png" alt="Hindi"></div>
+                </section>
+
+                <!-- formulario -->
+                <section>
+                    <figure class="quadrado-section-escrito">
+                        <p>Nome:</p>
+                        <input type="text" placeholder="Seu Nome">
+
+                        <p>País:</p>
+                        <select name="pais" id="pais">
+                            <option value="África do Sul" selected disabled>Selecione um país:</option>
+                            <option value="África do Sul">África do Sul</option>
+                            <option value="Alemanha">Alemanha</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Austrália">Austrália</option>
+                            <option value="Bélgica">Bélgica</option>
+                            <option value="Bélgica">Bélgica</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Canadá">Canadá</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Colômbia">Colômbia</option>
+                            <option value="Espanha">Espanha</option>
+                            <option value="Estados Unidos">Estados Unidos</option>
+                            <option value="França">França</option>
+                            <option value="Itália">Itália</option>
+                            <option value="Japão">Japão</option>
+                        </select>
+
+                        <p>Descrição:</p>
+                        <textarea name="Descrição" id="Descrição" placeholder="   Olá eu me chamo..."></textarea>
+
+                    </figure>
+                </section>
+
+                <!-- Idiomas -->
+                <section>
+                    <figure class="quadrado-section-paises">
+                        <p>Idiomas:</p>
+                        <div class="flags-container">
+                            <div class="flag"><img src="https://flagcdn.com/w320/es.png" alt="Espanhol"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/us.png" alt="Inglês"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/br.png" alt="Português"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/cn.png" alt="Chinês"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/fr.png" alt="Francês"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/it.png" alt="Italiano"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/de.png" alt="Alemão"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/sa.png" alt="Árabe"></div>
+                            <div class="flag"><img src="https://flagcdn.com/w320/in.png" alt="Hindi"></div>
                         </div>
-                </figure>
-                
+                    </figure>
+
+                </section>
             </section>
-        </section>
         </article>
 
         <section>
             <h1 id="texto-avatar">Avatares</h1>
-            
-                <div class="divisao-icones">
-                    <img src="img/animais/ZebraFundoClean.png" alt="" class="icone-animais">
-                    <img src="img/animais/imageDragadoDeKomodo.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemAguia.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemArara.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemAvestrus.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemCavalo.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemChipanze.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemCoruja.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemElefante.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemGirafa.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemGorila.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemGuepardo.png" alt="" class="icone-animais">
-                </div>
-                <div class="divisao-icones">
-                    <img src="img/animais/imagemHipopotamo.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemLeao.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemLhama.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemOnca.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemPanda.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemPavao.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemPenguin.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemPombo.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemRinoceronte.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemTataruga.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemTubarao.png" alt="" class="icone-animais">
-                    <img src="img/animais/imagemUrsoPolar.png" alt="" class="icone-animais">
-                </div>
+
+            <div class="divisao-icones">
+                <img src="img/animais/ZebraFundoClean.png" alt="" class="icone-animais">
+                <img src="img/animais/imageDragadoDeKomodo.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemAguia.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemArara.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemAvestrus.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemCavalo.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemChipanze.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemCoruja.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemElefante.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemGirafa.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemGorila.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemGuepardo.png" alt="" class="icone-animais">
+            </div>
+            <div class="divisao-icones">
+                <img src="img/animais/imagemHipopotamo.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemLeao.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemLhama.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemOnca.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemPanda.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemPavao.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemPenguin.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemPombo.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemRinoceronte.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemTataruga.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemTubarao.png" alt="" class="icone-animais">
+                <img src="img/animais/imagemUrsoPolar.png" alt="" class="icone-animais">
+            </div>
 
         </section>
     </main>
 
-    <footer>
-        <div id="divMaior-footer">
-            <h1>Obrigado por ajudar os animais!!!</h1>
-        </div>
+    <div id="footer"></div>
 
-        <div class="divsMenores-footer">
-            <h1>Contact info</h1>
-            <ul>
-                <li>endereco</li>
-                <li>email</li>
-                <li>telefone</li>
-            </ul>
-        </div>
-
-        <div class="divsMenores-footer">
-            <h1>Mensagem</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, doloribus unde voluptatem nobis porro
-                eveniet impedit voluptatibus quisquam dolor nemo fuga, temporibus illo nulla tenetur! Iste quibusdam
-                sequi dolorem accusamus.</p>
-        </div>
-    </footer>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
