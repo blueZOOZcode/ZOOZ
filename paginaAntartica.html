@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China</title>
+    <title>antarctica</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +15,29 @@
 
 
     <style>
+        #filtro-imagem {
+            opacity: 60%;
+        }
+
+        #texto-Main h1 {
+            font-weight: 600;
+        }
+
         .card .overlay {
-            height: 30%;
+            height: 32%;
         }
 
         #imagem-menor .overlay {
             height: 20%;
         }
     </style>
+
+    </style>
 </head>
 
 <body>
 
-    <figure><img src="img/imgpaises/chinaFlag.png" alt="" id="imagem-fundo"></figure>
+    <figure><img src="img/imgpaises/antarticaFlag.png" alt="" id="imagem-fundo"></figure>
     <figure id="filtro-imagem"></figure>
 
     <header>
@@ -46,35 +56,40 @@
         <form action="">
             <input type="text" class="idbusca" placeholder="📍Animal/País">
             <button id="botao-buscar">🔍Buscar</button>
-            <h1 id="textoMain">China</h1>
+            <h1 id="textoMain">Antarctica</h1>
         </form>
     </nav>
 
     <main>
         <section id="texto-Main">
-            <h1>📍 Centro de Pesquisa e Criação de Pandas de Chengdu</h1>
+            <h1>📍 Geórgia do Sul, Ilhas Sandwich do Sul e partes da Península Antártica.</h1>
         </section>
 
         <section id="container-imagem-animal">
 
             <section class="card" id="imagem-maior">
-                <img src="img/animaisPaginasBuscar/panda2.png" alt="">
+                <img src="img/animaisPaginasBuscar/casalPenguin2.png" alt="">
                 <div class="overlay">
-                    <h3>Oreo <span>🍪</span></h3>
-                    <p>Segundo o Zoológico Nacional Smithsonian, há cerca de 1 864 pandas-gigantes vivendo na natureza
-                    </p>
+                    <div id="titulo-overlay1">
+                        <h3>Pingo & Pinga</h3>
+                        <img src="img/animaisPaginasBuscar/penguinAura.png" alt=""
+                            style="height: 70px; border-radius: 50%;">
+                    </div>
+                    <p>Organizações como a Antarctic and Southern Ocean Coalition (ASOC) e a plataforma ZOOZ em 2025,
+                        estão trabalhando para ampliar áreas protegidas no oceano Antártico, garantindo alimento e
+                        espaço seguro para os pinguins.</p>
                 </div>
             </section>
 
             <section class="card" id="imagem-menor">
-                <img src="img/animaisPaginasBuscar/panda1.png" alt="">
+                <img src="img/animaisPaginasBuscar/casalPenguin1.png" alt="">
                 <div class="overlay" id="container-overlay-img-menor">
-                    <img src="img/animaisPaginasBuscar/poo.png" alt="" style="height: 70px; border-radius: 50%;">
+                    <img src="img/animaisPaginasBuscar/yinyang.png" alt="" style="height: 70px; border-radius: 50%;">
                     <div>
-                        <h3>PIQUE-PEGA PRA FICAR FORTE</h3>
-                        <p>Shifu & Po</p>
+                        <h3>NOVO FILHOTE DE YIN YANG</h3>
+                        <p>Yin Yang</p>
                     </div>
-                    <span>10,0k 👥</span>
+                    <span>11,0k 👥</span>
                 </div>
             </section>
 
@@ -91,11 +106,6 @@
                 document.getElementById('footer').innerHTML = data;
             });
 
-        // fetch('header.html')
-        //     .then(response => response.text())
-        //     .then(data => {
-        //         document.getElementById('header').innerHTML = data;
-        //     });
     </script>
 
 </body>
