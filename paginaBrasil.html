@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brasil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="stylesheet" href="Css/paises.css" />
+
+    <style>
+        #imagem-maior {
+            margin-left: -1.4rem;
+        }
+
+        #imagem-maior>img {
+            height: 45rem;
+            width: 50rem;
+            object-fit: cover;
+        }
+
+        #imagem-menor1>img {
+            height: 20rem;
+            width: 50rem;
+            object-fit: cover;
+        }
+
+        #imagem-menor2>img {
+            height: 22rem;
+            width: 60rem;
+            object-fit: cover;
+        }
+
+        #imagem-menor2 {
+            margin-top: 3rem;
+        }
+
+        #section-img-pequenas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #imagem-menor2 .overlay {
+            height: 27%;
+        }
+
+        #img-pin {
+            height: 3rem;
+        }
+
+        #img-ufrs {
+            height: 3rem;
+        }
+
+        #container-argentina {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #container-argentina h3 {
+            padding-bottom: 1rem;
+        }
+
+        #bandeira-argentina {
+            object-fit: cover;
+            height: 2rem;
+            width: 55rem;
+        }
+
+        #titulo-overlay1 {
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        #imagem-maior .overlay {
+            height: 32%;
+        }
+
+        #imagem-menor .overlay {
+            height: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <img src="img/imgpaises/brasilFlag.png" alt="Bandeira do Brasil" id="imagem-fundo" />
+    </figure>
+
+    <figure id="filtro-imagem"></figure>
+
+    <header>
+        <section>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZOOZ" />
+                    </a>
+                </li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="#">Doações</a></li>
+                <li id="last">
+                    <a href="paginaPerfil.html">
+                        <img id="icone-avatar" src="img/animais/ZebraFundoClean.png" alt="Imagem Zebra" />
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <nav>
+        <form action="#">
+            <input type="text" class="idbusca" placeholder="📍Animal/País" />
+            <button id="botao-buscar">🔍Buscar</button>
+            <h1 id="textoMain">Brasil</h1>
+        </form>
+    </nav>
+
+    <main>
+        <section id="texto-Main">
+            <img src="img/location.png" alt="Ícone de localização" id="img-pin" />
+            <img src="img/zologicos/ufrgsLogo.png" alt="Logo da UFRGS" id="img-ufrs" />
+        </section>
+
+        <section id="container-imagem-animal">
+            <!-- Imagem maior -->
+            <section class="card" id="imagem-maior">
+                <img src="img/animaisPaginasBuscar/maverick1.png" alt="Pinguim Maverick" />
+                <div class="overlay">
+                    <div id="titulo-overlay1">
+                        <h3>Maverick</h3>
+                        <img src="img/animaisPaginasBuscar/iconeMaverick.png" alt="Ícone Maverick"
+                            style="height: 70px; border-radius: 50%;" />
+                    </div>
+                    <p>
+                        Pinguin conhecido como “Maverick” no stream ZOOZ (zeal for animals) foi resgatado
+                        em rota migratória no litoral do RS
+                    </p>
+                </div>
+            </section>
+
+            <!-- Imagens menores -->
+            <section id="section-img-pequenas">
+                <section class="card" id="imagem-menor1">
+                    <img src="img/animaisPaginasBuscar/maverick2.png" alt="Maverick 2" />
+                    <div class="overlay" id="container-overlay-img-menor">
+                        <img src="img/animaisPaginasBuscar/iconeMaverick.png" alt="Ícone Maverick"
+                            style="height: 70px; border-radius: 50%;" />
+                        <div>
+                            <h3>NOVO FILHOTE DE YIN YANG</h3>
+                            <p>Yin Yang</p>
+                        </div>
+                        <span>11,0k 👥</span>
+                    </div>
+                </section>
+
+                <section class="card" id="imagem-menor2">
+                    <img src="img/animaisPaginasBuscar/maverickLive.png" alt="Live Maverick" />
+                    <div class="overlay" id="container-overlay-img-menor2">
+                        <div id="container-argentina">
+                            <h3>Imagem da LIVE: MAVERICK “O PULADOR DE PEDRAS”</h3>
+                            <img src="img/imgpaises/argentinaFlag.png" alt="Bandeira da Argentina"
+                                id="bandeira-argentina" />
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
