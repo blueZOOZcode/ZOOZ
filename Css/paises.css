@@ -30,12 +30,12 @@ nav {
 }
 
 #texto-Main {
-    margin-left: 3.125rem;
-    margin-bottom: 1.25rem;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
 }
 
 #texto-Main h1 {
-    font-size: 1.25rem;
+    font-size: 2vh;
     color: white;
 }
 
@@ -47,24 +47,24 @@ nav {
 }
 
 #container-imagem-animal img {
-    border-radius: 1.875rem;
+    border-radius: 3vh;
     display: block;
 }
 
 #imagem-maior img {
-    height: 45rem;
+    height: 72vh;
     width: auto;
 }
 
 #imagem-menor img {
-    height: 45rem;
+    height: 72vh;
     width: auto;
 }
 
 /* Estilos dos cards */
 .card {
     position: relative;
-    border-radius: 0.625rem;
+    border-radius: 1vh;
     overflow: hidden;
 }
 
@@ -75,27 +75,27 @@ nav {
     width: 100%;
     background: rgba(255, 165, 0, 0.7);
     color: white;
-    padding: 0.9375rem;
+    padding: 1.5vh;
     box-sizing: border-box;
-    border-radius: 1.875rem;
+    border-radius: 3vh;
 }
 
 #imagem-maior h3 {
     font-weight: 700;
-    font-size: 2.5rem;
-    margin-left: 0.625rem;
-    margin-right: 1rem;
-    margin-bottom: 0.9375rem;
+    font-size: 4vh;
+    margin-left: 1vh;
+    margin-right: 1.6vh;
+    margin-bottom: 1.5vh;
 }
 
 #imagem-maior p {
     font-weight: 400;
-    font-size: 1.875rem;
-    margin-left: 0.625rem;
+    font-size: 3vh;
+    margin-left: 1vh;
 }
 
 #container-overlay-img-menor {
-    padding-top: 2.5rem;
+    padding-top: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -103,20 +103,20 @@ nav {
 
 #container-overlay-img-menor h3 {
     font-weight: 600;
-    font-size: 1.375rem;
-    margin-top: 0.625rem;
-    margin-left: -1rem;
+    font-size: 2.2vh;
+    margin-top: 1vh;
+    margin-left: -1.6vh;
 }
 
 #container-overlay-img-menor p {
     font-weight: 400;
-    font-size: 1.25rem;
-    margin-left: -1rem;
+    font-size: 2vh;
+    margin-left: -1.6vh;
 }
 
 #container-overlay-img-menor span {
-    margin-top: 1.875rem;
-    font-size: 1.25rem;
+    margin-top: 3vh;
+    font-size: 2vh;
     font-weight: bold;
 }
 
