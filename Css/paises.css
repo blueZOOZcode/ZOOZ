@@ -44,6 +44,10 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    /* IMPORTANTE */
+    flex-wrap: wrap;
+    /* IMPORTANTE */
+    row-gap: 3vh;
 }
 
 #container-imagem-animal img {
@@ -52,12 +56,12 @@ nav {
 }
 
 #imagem-maior img {
-    height: 72vh;
+    height: 45rem;
     width: auto;
 }
 
 #imagem-menor img {
-    height: 72vh;
+    height: 45rem;
     width: auto;
 }
 
