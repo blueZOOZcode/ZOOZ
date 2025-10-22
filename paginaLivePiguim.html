@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #buscar {
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            gap: 10px; 
+            margin: 0 auto; 
+        }
+        nav {
+            padding-bottom: 30px;
+        }
+
+        .quadrado-atras {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            height: 100%;
+            background-color: #FFC466;
+
+        }
+        .imagemAjustada{
+            
+            width: 72vh;
+            
+            
+        }
+        .coluna {
+            flex: 1;
+            width: 100%;
+            padding: 0 20px;
+
+
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+        }
+        #formulario{
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+        
+
+        main {
+            min-height: 840px;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        section > article {
+            color: white;
+            margin:auto;
+        }
+        h2 {
+            font-size: 4em;
+            display: block;
+            margin-bottom: 10px; 
+        }
+        h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        section > button{
+            background-color: #45D0B9;
+            padding: 20px 70px;
+            border-radius: 200px;
+            font-size: 2em;
+            color: white;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #mensagemagradecimento{
+            margin-top: 20vh;
+            background-color: #FFAE2E;
+            font-size: 2em;
+            border-radius: 50px;
+        }
+        #mensagemagradecimento >h4{
+            margin-bottom: 100px;
+            margin-top: 50px;
+            font-size: 2em;
+            
+        }
+        #mensagemagradecimento >p{
+            margin: 0 110px 40px 110px;
+        }
+        #quartolugar{
+            width: 80vh;
+        }
+
+        
+
+
+       
+      
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="">Inicio</a></li>
+                <nav id="buscar">
+                    <form action="" id="formulario"> 
+                        <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+                        <button id="botao-buscar" type="submit">🔍Buscar</button>
+                        <h1 id="textoMain"></h1>
+                    </form>
+                </nav>
+                
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a> </li>
+            </ul>
+        </section>
+    </header>
+    
+    <main>
+        <article>
+            <figure class="quadrado-atras">
+                <aside class="container">
+                   
+                   
+                    <section class="coluna">
+                    <article>
+                    <h2>Ranking</h2>
+                    </article>
+                    <img src="img/doacao/Rank1,2,3.png" alt="rank1,2,3">
+                    </section>
+                    
+                    <section class="coluna">
+                        <article>
+                            <h2>Ajude os Animais</h2>
+                            <h3>com um gesto simples</h3>
+                        </article>
+                        <img class="imagemAjustada" src="img/doacao/mulherComAnimalBalança.png" alt="mulher">
+                    </section>
+                
+                
+                </aside>
+                
+            </figure>
+            
+            <aside class="container">
+                   
+                   
+                    <section class="coluna">
+                    <div>
+                        <img id="quartolugar" src="img/doacao/4,5,6 lugar.png" alt="">
+                    </div>
+                    </section>
+                    
+                    <section class="coluna">
+                        <button>Doe Aqui!</button>
+                        <article id="mensagemagradecimento">
+                            <h4>Muito obrigado pela sua doação!</h4> 
+
+                            <p>Seu apoio ajuda a garantir cuidado, proteção e um futuro melhor para diversos animais que precisam de atenção e carinho. Cada contribuição faz a diferença na vida deles.</p>
+                        </article>
+                    </section>
+                
+                
+                </aside>
+        </article>
+    </main>
+    <div id="footer"></div>
+    <script src="js/scriptBuscar.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
