@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Css/index.css">
-
     <style>
         nav {
             padding-bottom: 30px;
         }
 
+        /* figure vai ser o flex container */
         .quadrado-atras {
             display: flex;
             flex-direction: row;
@@ -24,7 +24,8 @@
             gap: 20px;
         }
 
-        main {
+        main{
+            /* height: 840px; */
             min-height: 840px;
         }
 
@@ -98,6 +99,7 @@
             border-radius: 50%;
         }
 
+        /* Estilos para substituir os estilos inline removidos */
         .overlay #img-pinguins {
             margin-left: -4vh;
         }
@@ -142,16 +144,14 @@
                 <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
                 <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
                 <li class="texto-header"><a href="">Doações</a></li>
-                <li><a href="paginaLogin.html"><button id="botao-login" type="submit">👤Login/Cadastro</button></a></li>
                 <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
                             alt="Imagem Zebra"></a> </li>
             </ul>
         </section>
     </header>
     <nav>
-        <form action="" id="formulario"> 
-            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
-            <button id="botao-buscar" type="submit">🔍Buscar</button>
+        <form action=""> <input type="text" class="idbusca" placeholder="📍Animal/País"> <button
+                id="botao-buscar">🔍Buscar</button>
             <h1 id="textoMain">Procurar</h1>
         </form>
     </nav>
@@ -182,7 +182,7 @@
                     <section>
                         <div class="container-pais"> <a href="paginaAntartica.html"><img class="imagem-paises"
                                     src="img/imgpaises/antarticaFlag.png" alt="Bandeira Antártida"></a>
-                            <h2>Antártica</h2>
+                            <h2>Antártida</h2>
                         </div>
                         <div class="container-pais"> <a href="paginaChina.html"><img class="imagem-paises"
                                     src="img/imgpaises/chinaFlag.png" alt="Bandeira China"></a>
@@ -225,14 +225,7 @@
         </article>
     </main>
     <div id="footer"></div>
-    <script src="js/scriptBuscar.js"></script>
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-    </script>
+    <script> fetch('footer.html').then(response => response.text()).then(data => { document.getElementById('footer').innerHTML = data; }); </script>
 </body>
 
 </html>

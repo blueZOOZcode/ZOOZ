@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>antarctica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/paises.css">
+
+
+    <style>
+
+        #filtro-imagem {
+            opacity: 60%;
+        }
+
+        #texto-Main h1 {
+            font-weight: 600;
+        }
+
+        .card .overlay {
+            height: 32%;
+        }
+
+        #imagem-menor .overlay {
+            height: 20%;
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+
+    <figure><img src="img/imgpaises/antarticaFlag.png" alt="" id="imagem-fundo"></figure>
+    <figure id="filtro-imagem"></figure>
+
+    <header>
+        <section>
+            <ul>
+                <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="">Doações</a></li>
+                <li><a href="paginaLogin.html"><button id="botao-login" type="submit">👤Login/Cadastro</button></a></li>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a></li>
+            </ul>
+        </section>
+    </header>
+
+    <nav>
+        
+        <form action="" id="formulario">
+            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+            <button id="botao-buscar" type="submit">🔍Buscar</button>
+            <h1 id="textoMain">Antarctica</h1>
+        </form>
+    </nav>
+
+    <main>
+        <section id="texto-Main">
+            <h1>📍 Geórgia do Sul, Ilhas Sandwich do Sul e partes da Península Antártica.</h1>
+        </section>
+
+        <section id="container-imagem-animal">
+
+            <section class="card" id="imagem-maior">
+                <img src="img/animaisPaginasBuscar/casalPenguin2.png" alt="">
+                <div class="overlay">
+                    <div id="titulo-overlay1">
+                        <h3>Pingo & Pinga</h3>
+                        <img src="img/animaisPaginasBuscar/penguinAura.png" alt=""
+                            style="height: 70px; border-radius: 50%;">
+                    </div>
+                    <p>Organizações como a Antarctic and Southern Ocean Coalition (ASOC) e a plataforma ZOOZ em 2025,
+                        estão trabalhando para ampliar áreas protegidas no oceano Antártico, garantindo alimento e
+                        espaço seguro para os pinguins.</p>
+                </div>
+            </section>
+
+            <section class="card" id="imagem-menor">
+                <img src="img/animaisPaginasBuscar/casalPenguin1.png" alt="">
+                <div class="overlay" id="container-overlay-img-menor">
+                    <img src="img/animaisPaginasBuscar/yinyang.png" alt="" style="height: 70px; border-radius: 50%;">
+                    <div>
+                        <h3>NOVO FILHOTE DE YIN YANG</h3>
+                        <p>Yin Yang</p>
+                    </div>
+                    <span>11,0k 👥</span>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/scriptBuscar.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+    </script>
+
+</body>
+
+</html>

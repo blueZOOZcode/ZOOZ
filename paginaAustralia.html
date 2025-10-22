@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austrália</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/paises.css">
+
+
+    <style>
+        .card .overlay {
+            height: 42%;
+        }
+
+        #imagem-menor .overlay {
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <figure><img src="img/imgpaises/australiaFlag.png" alt="" id="imagem-fundo"></figure>
+    <figure id="filtro-imagem"></figure>
+
+    <header>
+        <section>
+            <ul>
+                <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="">Doações</a></li>
+                <li><a href="paginaLogin.html"><button id="botao-login" type="submit">👤Login/Cadastro</button></a></li>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a></li>
+            </ul>
+        </section>
+    </header>
+
+    <nav>
+        <form action="" id="formulario">
+            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+            <button id="botao-buscar" type="submit" >🔍Buscar</button>
+            <h1 id="textoMain">Austrália</h1>
+        </form>
+    </nav>
+
+    <main>
+        <section id="texto-Main">
+            <h1>📍 Outback Australiano</h1>
+        </section>
+
+        <section id="container-imagem-animal">
+
+            <section class="card" id="imagem-maior">
+                <img src="img/animaisPaginasBuscar/caguru2.png" alt="">
+                <div class="overlay">
+                    <div id="titulo-overlay1">
+                        <h3>Sydney</h3>
+                        <img src="img/animaisPaginasBuscar/sydney.png" alt="" style="height: 70px; border-radius: 50%;">
+                    </div>
+                    <p>A população de cangurus na Austrália, maior que a de humanos, cresce devido a chuvas e alimentos
+                        abundantes, mas enfrenta escassez de recursos, causando competição. Para controlar o número, o
+                        governo permite o abate de cerca de 1,3 milhão de animais por ano, usado comercialmente, prática
+                        criticada por possíveis crueldades.</p>
+                </div>
+            </section>
+
+            <section class="card" id="imagem-menor">
+                <img src="img/animaisPaginasBuscar/canguru1.png" alt="">
+                <div class="overlay" id="container-overlay-img-menor">
+                    <img src="img/animaisPaginasBuscar/mikeTyson1.png" alt="" style="height: 70px; border-radius: 50%;">
+                    <div>
+                        <h3>TREINANDO PRA ENTRAR NO UFC</h3>
+                        <p>Mike & Tyson</p>
+                    </div>
+                    <span>11,0k 👥</span>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/scriptBuscar.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+    </script>
+
+</body>
+
+</html>

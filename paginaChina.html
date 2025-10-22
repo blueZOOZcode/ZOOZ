@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/paises.css">
+
+
+    <style>
+        .card .overlay {
+            height: 30%;
+        }
+
+        #imagem-menor .overlay {
+            height: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <figure><img src="img/imgpaises/chinaFlag.png" alt="" id="imagem-fundo"></figure>
+    <figure id="filtro-imagem"></figure>
+
+    <header>
+        <section>
+            <ul>
+                <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt=""></a></li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="">Doações</a></li>
+                <li><a href="paginaLogin.html"><button id="botao-login" type="submit">👤Login/Cadastro</button></a></li>
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                            alt="Imagem Zebra"></a></li>
+            </ul>
+        </section>
+    </header>
+
+    <nav>
+        <form action="" id="formulario">
+            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+            <button id="botao-buscar" type="submit">🔍Buscar </button>
+            <h1 id="textoMain">China</h1>
+        </form>
+    </nav>
+
+    <main>
+        <section id="texto-Main">
+            <h1>📍 Centro de Pesquisa e Criação de Pandas de Chengdu</h1>
+        </section>
+
+        <section id="container-imagem-animal">
+
+            <section class="card" id="imagem-maior">
+                <img src="img/animaisPaginasBuscar/panda2.png" alt="">
+                <div class="overlay">
+                    <h3>Oreo <span>🍪</span></h3>
+                    <p>Segundo o Zoológico Nacional Smithsonian, há cerca de 1 864 pandas-gigantes vivendo na natureza
+                    </p>
+                </div>
+            </section>
+
+            <section class="card" id="imagem-menor">
+                <img src="img/animaisPaginasBuscar/panda1.png" alt="">
+                <div class="overlay" id="container-overlay-img-menor">
+                    <img src="img/animaisPaginasBuscar/poo.png" alt="" style="height: 70px; border-radius: 50%;">
+                    <div>
+                        <h3>PIQUE-PEGA PRA FICAR FORTE</h3>
+                        <p>Shifu & Po</p>
+                    </div>
+                    <span>10,0k 👥</span>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/scriptBuscar.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+        // fetch('header.html')
+        //     .then(response => response.text())
+        //     .then(data => {
+        //         document.getElementById('header').innerHTML = data;
+        //     });
+    </script>
+
+</body>
+
+</html>
