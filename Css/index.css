@@ -24,6 +24,18 @@ header section ul {
     /* flex-flow: row wrap; */
 }
 
+#botao-login {
+    margin-left: 20px;
+    margin-top: 15px;
+    height: 63px;
+    width: 250px;
+    border-radius: 70px;
+    background-color: #FF9D00;
+    font-size: 27px;
+    color: white;
+    border: 0;
+}
+
 #last {
     margin-left: auto;
     margin-right: 20px;
