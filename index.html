@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <style>
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
     /* Fundo atrás do carrossel */
     #quadrado-atras {
       position: absolute;
@@ -44,6 +49,7 @@
     .swiper {
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
     .swiper-slide {
@@ -68,7 +74,6 @@
     .info {
       position: absolute;
       bottom: 0;
-
       width: 98%;
       padding: 12px;
       color: #fff;
@@ -109,7 +114,7 @@
 
     /* seus estilos existentes continuam */
     #container-zologico {
-      margin-top: 20px;
+      margin-top: 7vh;
       height: 225px;
       background-color: #FFC466;
       display: flex;
@@ -143,9 +148,19 @@
   </header>
 
   <nav>
-    <form action="">
-      <input type="text" class="idbusca" placeholder="📍Animal/País">
-      <button id="botao-buscar">🔍Buscar</button>
+    
+    <form action="" id="formulario">
+      <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+      <!-- <select name="pais" class="idbusca" id="escolha-pais">
+        <option value="" selected disabled>📍Animal/País</option>
+        <option value="Antártica">Antártica</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Austrália">Austrália</option>
+        <option value="Brasil">Brasil</option>
+        <option value="China">China</option>
+        <option value="Tanzânia">Tanzânia</option>
+      </select> -->
+      <button id="botao-buscar" type="submit">🔍Buscar</button>
       <h1 id="textoMain">Perto de você</h1>
     </form>
   </nav>
@@ -222,28 +237,27 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/scriptBuscar.js"></script>
   <script>
     fetch('footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
       });
-
     const swiper = new Swiper('.swiper', {
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 'auto',
       loop: true,
-      spaceBetween: -100, // sobreposição
+      spaceBetween: -100,
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
         depth: 200,
         modifier: 1.5,
         slideShadows: false,
-      },
-      pagination: {
+      }, pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },

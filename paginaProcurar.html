@@ -24,7 +24,7 @@
             gap: 20px;
         }
 
-        main{
+        main {
             min-height: 840px;
         }
 
@@ -148,8 +148,9 @@
         </section>
     </header>
     <nav>
-        <form action=""> <input type="text" class="idbusca" placeholder="📍Animal/País"> <button
-                id="botao-buscar">🔍Buscar</button>
+        <form action="" id="formulario"> 
+            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+            <button id="botao-buscar" type="submit">🔍Buscar</button>
             <h1 id="textoMain">Procurar</h1>
         </form>
     </nav>
@@ -180,7 +181,7 @@
                     <section>
                         <div class="container-pais"> <a href="paginaAntartica.html"><img class="imagem-paises"
                                     src="img/imgpaises/antarticaFlag.png" alt="Bandeira Antártida"></a>
-                            <h2>Antártida</h2>
+                            <h2>Antártica</h2>
                         </div>
                         <div class="container-pais"> <a href="paginaChina.html"><img class="imagem-paises"
                                     src="img/imgpaises/chinaFlag.png" alt="Bandeira China"></a>
@@ -223,7 +224,14 @@
         </article>
     </main>
     <div id="footer"></div>
-    <script> fetch('footer.html').then(response => response.text()).then(data => { document.getElementById('footer').innerHTML = data; }); </script>
+    <script src="js/scriptBuscar.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>

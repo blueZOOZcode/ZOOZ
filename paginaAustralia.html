@@ -43,9 +43,9 @@
     </header>
 
     <nav>
-        <form action="">
-            <input type="text" class="idbusca" placeholder="📍Animal/País">
-            <button id="botao-buscar">🔍Buscar</button>
+        <form action="" id="formulario">
+            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+            <button id="botao-buscar" type="submit" >🔍Buscar</button>
             <h1 id="textoMain">Austrália</h1>
         </form>
     </nav>
@@ -88,7 +88,7 @@
     </main>
 
     <div id="footer"></div>
-
+    <script src="js/scriptBuscar.js"></script>
     <script>
         fetch('footer.html')
             .then(response => response.text())

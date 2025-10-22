@@ -116,9 +116,9 @@
     </header>
 
     <nav>
-        <form action="#">
-            <input type="text" class="idbusca" placeholder="📍Animal/País" />
-            <button id="botao-buscar">🔍Buscar</button>
+        <form action="" id="formulario">
+            <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+            <button id="botao-buscar" type="submit">🔍Buscar</button>
             <h1 id="textoMain">Brasil</h1>
         </form>
     </nav>
@@ -148,18 +148,20 @@
 
             <!-- Imagens menores -->
             <section id="section-img-pequenas">
-                <section class="card" id="imagem-menor1">
-                    <img src="img/animaisPaginasBuscar/maverick2.png" alt="Maverick 2" />
-                    <div class="overlay" id="container-overlay-img-menor">
-                        <img src="img/animaisPaginasBuscar/iconeMaverick.png" alt="Ícone Maverick"
-                            style="height: 70px; border-radius: 50%;" />
-                        <div>
-                            <h3>NOVO FILHOTE DE YIN YANG</h3>
-                            <p>Yin Yang</p>
+                <a href="">
+                    <section class="card" id="imagem-menor1">
+                        <img src="img/animaisPaginasBuscar/maverick2.png" alt="Maverick 2" />
+                        <div class="overlay" id="container-overlay-img-menor">
+                            <img src="img/animaisPaginasBuscar/iconeMaverick.png" alt="Ícone Maverick"
+                                style="height: 70px; border-radius: 50%;" />
+                            <div>
+                                <h3>CUIDADOS AO MAVERICK</h3>
+                                <p>Maverick</p>
+                            </div>
+                            <span>3,0k 👥</span>
                         </div>
-                        <span>11,0k 👥</span>
-                    </div>
-                </section>
+                    </section>
+                </a>
 
                 <section class="card" id="imagem-menor2">
                     <img src="img/animaisPaginasBuscar/maverickLive.png" alt="Live Maverick" />
@@ -176,7 +178,7 @@
     </main>
 
     <div id="footer"></div>
-
+    <script src="js/scriptBuscar.js"></script>
     <script>
         fetch("footer.html")
             .then((response) => response.text())
