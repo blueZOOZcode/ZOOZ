@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procurar</title>
+    <title>Live Pinguim</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -15,14 +15,7 @@
         *{
             margin: 0;
             padding: 0;
-            border: 0;
-        }
-        #buscar {
-            display: flex;
-            align-items: center; 
-            justify-content: center; 
-            gap: 10px; 
-            margin: 0 auto; 
+            border: 0; 
         }
         nav {
             padding-bottom: 30px;
@@ -39,26 +32,24 @@
 
         }
         .imagemAjustada{
-            
-            width: 72vh;
-            
-            
+            width: 72vh; 
         }
         .coluna {
             flex: 1;
             width: 100%;
             padding: 0 20px;
-
-
             display: flex;
             flex-direction: column; 
             align-items: center; 
             text-align: center; 
+            margin: 0 20px;
         }
-        #formulario{
-            display: flex;
-            align-items: center;
-            gap: 10px; 
+        .blocoLaraja{
+            background-color: #FFC466;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 8px black;
+            margin-top: 5vh;
         }
         
 
@@ -70,46 +61,77 @@
             width: 100%;
             justify-content: center;
             align-items: center;
+        
         }
-        section > article {
-            color: white;
-            margin:auto;
-        }
-        h2 {
-            font-size: 4em;
-            display: block;
-            margin-bottom: 10px; 
-        }
-        h3 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        section > button{
-            background-color: #45D0B9;
-            padding: 20px 70px;
-            border-radius: 200px;
-            font-size: 2em;
-            color: white;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        #mensagemagradecimento{
-            margin-top: 20vh;
-            background-color: #FFAE2E;
-            font-size: 2em;
-            border-radius: 50px;
-        }
-        #mensagemagradecimento >h4{
-            margin-bottom: 100px;
-            margin-top: 50px;
-            font-size: 2em;
+        
+        
+        .posicaofix{
+            position: relative;
+            bottom: 25vh;
             
         }
-        #mensagemagradecimento >p{
-            margin: 0 110px 40px 110px;
+        #pinguimlive{
+            border-radius: 20px;
+            box-shadow: 2px 2px 20px black;
         }
-        #quartolugar{
-            width: 80vh;
+        .quadrado-atras{
+            height: 30vh;
+        }
+        .linha-conteudo {
+            display: flex;
+            align-items: center;     
+            justify-content: flex-start; 
+            gap: 10px;               
+        }
+
+        .lado-direito {
+            display: flex;
+            align-items: center;
+            gap: 10px;               
+        }
+
+        .lado-direito section {
+            display: flex;
+            flex-direction: column;  
+            text-align: left;        
+        }
+        button{
+            background-color: #ffa10b;
+            padding: 25px 40px;
+            font-size: 2em;
+            border-radius: 300px;
+            cursor: pointer;
+            margin-left: 15vh;
+
+        }
+        .container > :first-child {
+            flex: 2;
+            width: 100%;
+        }
+
+        .container > :last-child {
+            flex: 1;
+            width: 100%;
+        }
+        #pinguino{
+          border: 1px solid black;  
+          border-radius: 100%;
+          width: 60px;
+          height: 60px;
+          margin-left: 8vh;
+        }
+        #star{
+           filter: brightness(90%) invert(50%);
+           cursor: pointer;
+           margin-left: 2vh;
+        }
+        #star:checked{
+            filter: brightness(90%) invert(1000%);
+        }
+        .posicaofix2{
+            position: relative;
+            bottom: 12vh;
+            
         }
 
         
@@ -128,13 +150,6 @@
                 <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
                 <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
                 <li class="texto-header"><a href="">Inicio</a></li>
-                <nav id="buscar">
-                    <form action="" id="formulario"> 
-                        <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
-                        <button id="botao-buscar" type="submit">🔍Buscar</button>
-                        <h1 id="textoMain"></h1>
-                    </form>
-                </nav>
                 
                 <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
                             alt="Imagem Zebra"></a> </li>
@@ -145,49 +160,51 @@
     <main>
         <article>
             <figure class="quadrado-atras">
-                <aside class="container">
-                   
-                   
-                    <section class="coluna">
-                    <article>
-                    <h2>Ranking</h2>
-                    </article>
-                    <img src="img/doacao/Rank1,2,3.png" alt="rank1,2,3">
-                    </section>
-                    
-                    <section class="coluna">
-                        <article>
-                            <h2>Ajude os Animais</h2>
-                            <h3>com um gesto simples</h3>
-                        </article>
-                        <img class="imagemAjustada" src="img/doacao/mulherComAnimalBalança.png" alt="mulher">
-                    </section>
                 
-                
-                </aside>
                 
             </figure>
-            
             <aside class="container">
                    
                    
                     <section class="coluna">
-                    <div>
-                        <img id="quartolugar" src="img/doacao/4,5,6 lugar.png" alt="">
-                    </div>
-                    </section>
-                    
-                    <section class="coluna">
-                        <button>Doe Aqui!</button>
-                        <article id="mensagemagradecimento">
-                            <h4>Muito obrigado pela sua doação!</h4> 
 
-                            <p>Seu apoio ajuda a garantir cuidado, proteção e um futuro melhor para diversos animais que precisam de atenção e carinho. Cada contribuição faz a diferença na vida deles.</p>
-                        </article>
+                        <img style="width: 100%;" class="posicaofix" id="pinguimlive" src="img/animaisNoZologico/pinguin.png" alt="livepinguin">
+
+                        <div style="width: 100%;" class="linha-conteudo blocoLaraja posicaofix" >
+                            <img style="width: 50px; height: 50px;" id="star"  src="img/live/estrela (2).png" alt="">
+                            <div class="lado-direito">
+                                <img style="width: 50px; height: 50px;" id="pinguino" src="img/animais/imagemPenguin.png" alt="pinguino">
+                            
+                                <section style="color: white;">
+                                    <article style="font-weight: bold;">cuidado com os maverick</article>
+                                    <article>maverick</article>
+                                </section>
+                            </div>
+                            <Button>Doar</Button>
+                            <section style="margin-left: 5vh; color: white;">
+                                    <article><img style="width: 120px; height: 80px; margin: 0;" src="img/live/local.png" alt="local"></article>
+                                    <article style="font-size: 2em;">3K <img style="width: 50px; height: 50px; position: relative; top: 1vh;" src="img/live/espec.png" alt=""></article>
+                            </section>
+                        </div>
+                    </section>
+                
+                   
+                    <section class="coluna">
+                        
+                        
+
                     </section>
                 
                 
                 </aside>
+                <aside class="blocoLaraja posicaofix2" style="margin: 0 5vh;">
+                    <p style="font-size: 3em; margin: 0 6vh;">Mande sua mensagem de apoio ao pinguço favorito dos latinos! 🐧💙 Compartilhe essa causa e ajude a angariar doações para o seu cuidado e também para outros pinguins resgatados do Chile e da Argentina que precisam de atenção e carinho. Cada gesto de apoio faz a diferença!</p>
+                </aside>
+                <aside class="blocoLaraja posicaofix2" style="margin: 5vh;">
+                    <p style="font-size: 3em; margin: 0 6vh;">O pinguim-saltador-da-rocha é famoso por sua aparência única, marcada por penas amarelas acima dos olhos que lembram sobrancelhas estilizadas. 🐧✨ Ágil e corajoso, ele vive em regiões frias e costeiras, onde se destaca pela habilidade de escalar rochedos íngremes em busca de abrigo e alimento. Sua forma curiosa de se locomover, literalmente saltando entre pedras, deu origem ao nome da espécie. Apesar de pequeno em tamanho, é um exímio nadador e passa boa parte do tempo no mar. Essa incrível adaptação ao ambiente o torna um verdadeiro símbolo de resistência e equilíbrio da vida selvagem. Cada salto é uma demonstração de força e charme!</p>
+                </aside>
+            
+            
         </article>
     </main>
     <div id="footer"></div>
