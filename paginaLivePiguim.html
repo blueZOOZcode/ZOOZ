@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="Css/index.css">
-
+    <link rel="stylesheet" href="Css/chatLive.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
-            border: 0; 
+            border: 0;
         }
+
         nav {
             padding-bottom: 30px;
         }
@@ -31,81 +32,89 @@
             background-color: #FFC466;
 
         }
-        .imagemAjustada{
-            width: 72vh; 
+
+        .imagemAjustada {
+            width: 72vh;
         }
+
         .coluna {
             flex: 1;
             width: 100%;
             padding: 0 20px;
-            display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            text-align: center; 
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; */
             margin: 0 20px;
         }
+
         .coluna5 {
             flex: 1;
             width: 100%;
             padding: 0 0px;
             display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            text-align: center; 
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             margin: 0 20px;
         }
-        .blocoLaraja{
+
+        .blocoLaraja {
             background-color: #FFC466;
             padding: 20px;
             border-radius: 20px;
             box-shadow: 1px 1px 8px black;
             margin-top: 5vh;
         }
-        
+
 
         main {
             min-height: 840px;
         }
-        .container{
+
+        .container {
             display: flex;
             width: 100%;
             justify-content: center;
             align-items: center;
-        
         }
-        
-        
-        .posicaofix{
+
+
+        .posicaofix {
             position: relative;
             bottom: 25vh;
-            
+
         }
-        #pinguimlive{
+
+        #pinguimlive {
             border-radius: 20px;
             box-shadow: 2px 2px 20px black;
         }
-        .quadrado-atras{
+
+        .quadrado-atras {
             height: 30vh;
         }
+
         .linha-conteudo {
             display: flex;
-            align-items: center;     
-            justify-content: flex-start; 
-            gap: 10px;               
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
         }
 
         .lado-direito {
             display: flex;
             align-items: center;
-            gap: 10px;               
+            gap: 10px;
         }
 
         .lado-direito section {
             display: flex;
-            flex-direction: column;  
-            text-align: left;        
+            flex-direction: column;
+            text-align: left;
         }
-        button{
+
+        #botao-doar {
             background-color: #ffa10b;
             padding: 25px 40px;
             font-size: 2em;
@@ -114,45 +123,44 @@
             margin-left: 15vh;
 
         }
-        .container > :first-child {
+
+        .container> :first-child {
             flex: 2;
             width: 100%;
         }
 
-        .container > :last-child {
+        .container> :last-child {
             flex: 1;
             width: 100%;
         }
-        #pinguino{
-          border: 1px solid black;  
-          border-radius: 100%;
-          width: 60px;
-          height: 60px;
-          margin-left: 8vh;
+
+        #pinguino {
+            border: 1px solid black;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            margin-left: 8vh;
         }
-        #star{
-           filter: brightness(90%) invert(50%);
-           cursor: pointer;
-           margin-left: 2vh;
+
+        #star {
+            filter: brightness(90%) invert(50%);
+            cursor: pointer;
+            margin-left: 2vh;
         }
-        #star:checked{
+
+        #star:checked {
             filter: brightness(90%) invert(1000%);
         }
-        .posicaofix2{
+
+        .posicaofix2 {
             position: relative;
             bottom: 12vh;
-            
+
         }
-        .ajustamentoDireita{
+
+        .ajustamentoDireita {
             text-align: right;
         }
-
-        
-
-
-       
-      
-
     </style>
 </head>
 
@@ -163,65 +171,84 @@
                 <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
                 <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
                 <li class="texto-header"><a href="index.html">Inicio</a></li>
-                
+
                 <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
                             alt="Imagem Zebra"></a> </li>
             </ul>
         </section>
     </header>
-    
+
     <main>
         <article>
             <figure class="quadrado-atras">
-                
-                
+
+
             </figure>
             <aside class="container">
-                   
-                   
-                    <section class="coluna5">
 
-                        <img style="width: 100%;" class="posicaofix" id="pinguimlive" src="img/animaisNoZologico/pinguin.png" alt="livepinguin">
 
-                        <div style="width: 100%; padding: 1%;" class="linha-conteudo blocoLaraja posicaofix" >
-                            <img style="width: 50px; height: 50px;" id="star"  src="img/live/estrela (2).png" alt="">
-                            <div class="lado-direito">
-                                <img style="width: 50px; height: 50px;" id="pinguino" src="img/animais/imagemPenguin.png" alt="pinguino">
-                            
-                                <section style="color: white;">
-                                    <article style="font-weight: bold;">cuidado com os maverick</article>
-                                    <article>maverick</article>
-                                </section>
-                            </div>
-                            <Button>Doar</Button>
-                            <section style="display: flex; flex-direction: column; margin-left: 5vh; color: white;">
-                                    <article><img style="width: 120px; height: 80px; margin: 0;" src="img/live/local.png" alt="local"></article>
-                                    <article class="ajustamentoDireita" style="font-size: 2em;">3K <img style="width: 50px; height: 50px; position: relative; top: 1vh;" src="img/live/espec.png" alt=""></article>
+                <section class="coluna5">
+
+                    <img style="width: 100%;" class="posicaofix" id="pinguimlive"
+                        src="img/animaisPaginasBuscar/maverick2.png" alt="livepinguin">
+
+                    <div style="width: 100%; padding: 1%;" class="linha-conteudo blocoLaraja posicaofix">
+                        <img style="width: 50px; height: 50px;" id="star" src="img/live/estrela (2).png" alt="">
+                        <div class="lado-direito">
+                            <img style="width: 50px; height: 50px;" id="pinguino" src="img/animais/imagemPenguin.png"
+                                alt="pinguino">
+
+                            <section style="color: white;">
+                                <article style="font-weight: bold;">cuidado com os maverick</article>
+                                <article>maverick</article>
                             </section>
                         </div>
-                    </section>
-                
-                   
-                    <section class="coluna">
-                        
-                        
+                        <Button id="botao-doar">Doar</Button>
+                        <section style="display: flex; flex-direction: column; margin-left: 5vh; color: white;">
+                            <article><img style="width: 120px; height: 80px; margin: 0;" src="img/live/local.png"
+                                    alt="local"></article>
+                            <article class="ajustamentoDireita" style="font-size: 2em;">3K <img
+                                    style="width: 50px; height: 50px; position: relative; top: 1vh;"
+                                    src="img/live/espec.png" alt=""></article>
+                        </section>
+                    </div>
+                </section>
 
-                    </section>
-                
-                
-                </aside>
-                <aside class="blocoLaraja posicaofix2" style="margin: 0 5vh;">
-                    <p style="font-size: 3em; margin: 0 6vh;">Mande sua mensagem de apoio ao pinguço favorito dos latinos! 🐧💙 Compartilhe essa causa e ajude a angariar doações para o seu cuidado e também para outros pinguins resgatados do Chile e da Argentina que precisam de atenção e carinho. Cada gesto de apoio faz a diferença!</p>
-                </aside>
-                <aside class="blocoLaraja posicaofix2" style="margin: 5vh;">
-                    <p style="font-size: 3em; margin: 0 6vh;">O pinguim-saltador-da-rocha é famoso por sua aparência única, marcada por penas amarelas acima dos olhos que lembram sobrancelhas estilizadas. 🐧✨ Ágil e corajoso, ele vive em regiões frias e costeiras, onde se destaca pela habilidade de escalar rochedos íngremes em busca de abrigo e alimento. Sua forma curiosa de se locomover, literalmente saltando entre pedras, deu origem ao nome da espécie. Apesar de pequeno em tamanho, é um exímio nadador e passa boa parte do tempo no mar. Essa incrível adaptação ao ambiente o torna um verdadeiro símbolo de resistência e equilíbrio da vida selvagem. Cada salto é uma demonstração de força e charme!</p>
-                </aside>
-            
-            
+                <!-- Html Chat -->
+                <section class="coluna">
+                    <div class="chat-container">
+                        <div id="mensagens" class="mensagens"></div>
+                        <div class="area-input">
+                            <input id="entradaMensagem" type="text" placeholder="Digite sua mensagem...">
+                            <button id="botaoEnviar">Enviar</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Html Chat -->
+
+            </aside>
+            <aside class="blocoLaraja posicaofix2" style="margin: 0 5vh;">
+                <p style="font-size: 3em; margin: 0 6vh;">Mande sua mensagem de apoio ao pinguço favorito dos latinos!
+                    🐧💙 Compartilhe essa causa e ajude a angariar doações para o seu cuidado e também para outros
+                    pinguins resgatados do Chile e da Argentina que precisam de atenção e carinho. Cada gesto de apoio
+                    faz a diferença!</p>
+            </aside>
+            <aside class="blocoLaraja posicaofix2" style="margin: 5vh;">
+                <p style="font-size: 3em; margin: 0 6vh;">O pinguim-saltador-da-rocha é famoso por sua aparência única,
+                    marcada por penas amarelas acima dos olhos que lembram sobrancelhas estilizadas. 🐧✨ Ágil e
+                    corajoso, ele vive em regiões frias e costeiras, onde se destaca pela habilidade de escalar rochedos
+                    íngremes em busca de abrigo e alimento. Sua forma curiosa de se locomover, literalmente saltando
+                    entre pedras, deu origem ao nome da espécie. Apesar de pequeno em tamanho, é um exímio nadador e
+                    passa boa parte do tempo no mar. Essa incrível adaptação ao ambiente o torna um verdadeiro símbolo
+                    de resistência e equilíbrio da vida selvagem. Cada salto é uma demonstração de força e charme!</p>
+            </aside>
+
+
         </article>
     </main>
     <div id="footer"></div>
     <script src="js/scriptBuscar.js"></script>
+    <script src="js/scriptChat.js"></script>
     <script>
         fetch('footer.html')
             .then(response => response.text())
