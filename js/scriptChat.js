@@ -30,7 +30,10 @@ const usuarios = [
     "AnaTwitch",
     "Cleyton_77",
     "DudaGamer",
-    "Jhowzin"];
+    "Jhowzin",
+    "Mxghty",
+    "Luccalit"
+];
 
 const mensagensAleatorias = [
     "Slk, tadinho",
@@ -47,6 +50,7 @@ const mensagensAleatorias = [
     "Fé que vai dar certo!",
     "Bora spammar amor no chat ❤️",
     "Kkkk esses comentários",
+    "W",
     "Tamo junto galera!",
     "Ele merece todo apoio!",
     "O chat tá lindo hj 🥰",
@@ -67,7 +71,23 @@ const mensagensAleatorias = [
     "Todo mundo junto pelo pingu 💙",
     "Que vibes boas hoje no chat ✨",
     "A live tá incrível hoje!",
-    "Isso merece um emote exclusivo 😆"
+    "Que nostalgia esse momento 😢",
+    "Esse clipe vai viralizar com certeza!",
+    "Respeita o mito 🔥",
+    "A comunidade tá unida demais hoje 🙌",
+    "Eu esperei tanto por isso 😭",
+    "Tá cada vez melhor!",
+    "Kkkkk não aguento esse chat",
+    "Meu Deus, que plot twist 😱",
+    "Ele é simplesmente o GOAT 🐐",
+    "Salve pra geral que tá acompanhando!",
+    "Quem tá desde o início sabe 😎",
+    "Isso sim é conteúdo de qualidade!",
+    "Amanhã vai tá em todos os cortes 😆",
+    "Chat, spamma coração ❤️❤️❤️",
+    "Como não amar esse momento?",
+    "Slk, que vibe boa 😍",
+    "Nem parece que já passou tanto tempo!"
 ];
 
 // Função para criar e mostrar uma mensagem
@@ -82,11 +102,11 @@ function adicionarMensagem(usuario, texto) {
 botaoEnviar.addEventListener("click", () => {
     const texto = entradaMensagem.value.trim();
     if (texto === "") return;
-    
+
     // Adiciona sua mensagem
     adicionarMensagem("Você", texto);
     entradaMensagem.value = "";
-    
+
     elementoMensagens.scrollTop = elementoMensagens.scrollHeight; // rola pro fim
 
     // looping mensagens aleatórias
