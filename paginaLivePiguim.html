@@ -44,6 +44,16 @@
             text-align: center; 
             margin: 0 20px;
         }
+        .coluna5 {
+            flex: 1;
+            width: 100%;
+            padding: 0 0px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+            margin: 0 20px;
+        }
         .blocoLaraja{
             background-color: #FFC466;
             padding: 20px;
@@ -133,6 +143,9 @@
             bottom: 12vh;
             
         }
+        .ajustamentoDireita{
+            text-align: right;
+        }
 
         
 
@@ -149,7 +162,7 @@
             <ul>
                 <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
                 <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
-                <li class="texto-header"><a href="">Inicio</a></li>
+                <li class="texto-header"><a href="index.html">Inicio</a></li>
                 
                 <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
                             alt="Imagem Zebra"></a> </li>
@@ -166,11 +179,11 @@
             <aside class="container">
                    
                    
-                    <section class="coluna">
+                    <section class="coluna5">
 
                         <img style="width: 100%;" class="posicaofix" id="pinguimlive" src="img/animaisNoZologico/pinguin.png" alt="livepinguin">
 
-                        <div style="width: 100%;" class="linha-conteudo blocoLaraja posicaofix" >
+                        <div style="width: 100%; padding: 1%;" class="linha-conteudo blocoLaraja posicaofix" >
                             <img style="width: 50px; height: 50px;" id="star"  src="img/live/estrela (2).png" alt="">
                             <div class="lado-direito">
                                 <img style="width: 50px; height: 50px;" id="pinguino" src="img/animais/imagemPenguin.png" alt="pinguino">
@@ -181,9 +194,9 @@
                                 </section>
                             </div>
                             <Button>Doar</Button>
-                            <section style="margin-left: 5vh; color: white;">
+                            <section style="display: flex; flex-direction: column; margin-left: 5vh; color: white;">
                                     <article><img style="width: 120px; height: 80px; margin: 0;" src="img/live/local.png" alt="local"></article>
-                                    <article style="font-size: 2em;">3K <img style="width: 50px; height: 50px; position: relative; top: 1vh;" src="img/live/espec.png" alt=""></article>
+                                    <article class="ajustamentoDireita" style="font-size: 2em;">3K <img style="width: 50px; height: 50px; position: relative; top: 1vh;" src="img/live/espec.png" alt=""></article>
                             </section>
                         </div>
                     </section>
