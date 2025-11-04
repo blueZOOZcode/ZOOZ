@@ -1,231 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procurar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="Css/index.css">
-    <style>
-        nav {
-            padding-bottom: 30px;
-        }
-
-        /* figure vai ser o flex container */
-        .quadrado-atras {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        main{
-            /* height: 840px; */
-            min-height: 840px;
-        }
-
-        aside {
-            flex: 2;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-
-        #div-direita {
-            flex: 1;
-        }
-
-        .imagem-paises {
-            height: 360px;
-            width: 250px;
-            border-radius: 30px;
-            object-fit: cover;
-        }
-
-        .container-pais h2 {
-            display: flex;
-            justify-content: center;
-            font-size: 25px;
-            font-weight: 400;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        .imagens-direita {
-            width: 600px;
-            height: 260px;
-            border-radius: 30px;
-            margin-right: 87px;
-            object-fit: cover;
-        }
-
-        #div-direita section {
-            margin-bottom: 30px;
-        }
-
-        /* Cards e overlays */
-        .card {
-            position: relative;
-            border-radius: 1vh;
-            overflow: hidden;
-        }
-
-        .card .overlay {
-            position: absolute;
-            bottom: 0.5vh;
-            left: 0;
-            height: 30%;
-            width: 87.5%;
-            background: rgba(255, 165, 0, 0.7);
-            color: white;
-            padding: 1.5vh;
-            box-sizing: border-box;
-            border-radius: 3vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .card .overlay img {
-            margin-top: 1vh;
-            height: 50px;
-            border-radius: 50%;
-        }
-
-        /* Estilos para substituir os estilos inline removidos */
-        .overlay #img-pinguins {
-            margin-left: -4vh;
-        }
-
-        #texto-pinguin {
-            margin-left: -8vh;
-        }
-
-        #pinguin-span {
-            margin-right: -3vh;
-        }
-
-        .overlay #img-cr7 {
-            margin-left: -1vh;
-        }
-
-        .card .overlay h3 {
-            font-weight: 600;
-            font-size: 2.2vh;
-            margin-top: 1vh;
-            margin-left: -1.6vh;
-        }
-
-        .card .overlay p {
-            font-weight: 400;
-            font-size: 2vh;
-            margin-left: -1.6vh;
-        }
-
-        .card .overlay span {
-            margin-top: 3vh;
-            font-size: 2vh;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Simples</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .chat-container {
+    width: 350px;
+    height: 500px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .mensagens {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  .mensagem {
+    background: #333;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  .usuario {
+    font-weight: bold;
+    color: #6cf;
+  }
+  .area-input {
+    display: flex;
+    border-top: 1px solid #444;
+  }
+  input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #111;
+    color: #fff;
+    outline: none;
+  }
+  button {
+    background: #6cf;
+    border: none;
+    color: #000;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    background: #5ad;
+  }
+</style>
 </head>
-
 <body>
-    <header>
-        <section>
-            <ul>
-                <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
-                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
-                <li class="texto-header"><a href="">Doações</a></li>
-                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
-                            alt="Imagem Zebra"></a> </li>
-            </ul>
-        </section>
-    </header>
-    <nav>
-        <form action=""> <input type="text" class="idbusca" placeholder="📍Animal/País"> <button
-                id="botao-buscar">🔍Buscar</button>
-            <h1 id="textoMain">Procurar</h1>
-        </form>
-    </nav>
-    <main>
-        <article>
-            <figure class="quadrado-atras">
-                <aside>
-                    <section>
-                        <div class="container-pais"> <a href="paginaAustralia.html"><img class="imagem-paises"
-                                    src="img/imgpaises/australiaFlag.png" alt="Bandeira Austrália"></a>
-                            <h2>Austrália</h2>
-                        </div>
-                        <div class="container-pais"> <a href=""><img class="imagem-paises"
-                                    src="img/imgpaises/argentinaFlag.png" alt="Bandeira Argentina"></a>
-                            <h2>Argentina</h2>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="container-pais"> <a href="paginaBrasil.html"><img class="imagem-paises"
-                                    src="img/imgpaises/brasilFlag.png" alt="Bandeira Brasil"></a>
-                            <h2>Brasil</h2>
-                        </div>
-                        <div class="container-pais"> <a href=""><img class="imagem-paises"
-                                    src="img/imgpaises/tanzaniaFlag.png" alt="Bandeira Tanzânia"></a>
-                            <h2>Tanzânia</h2>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="container-pais"> <a href="paginaAntartica.html"><img class="imagem-paises"
-                                    src="img/imgpaises/antarticaFlag.png" alt="Bandeira Antártida"></a>
-                            <h2>Antártida</h2>
-                        </div>
-                        <div class="container-pais"> <a href="paginaChina.html"><img class="imagem-paises"
-                                    src="img/imgpaises/chinaFlag.png" alt="Bandeira China"></a>
-                            <h2>China</h2>
-                        </div>
-                    </section>
-                </aside>
-                <div id="div-direita">
-                    <section class="card"> <img class="imagens-direita" src="img/animaisNoZologico/penguinBando.png"
-                            alt="Imagem de Pinguins">
-                        <div class="overlay"> <img src="img/icones/PenguinsDeMadadascar.png" alt="Pinguins"
-                                id="img-pinguins">
-                            <div id="texto-pinguin">
-                                <h3>EQUIPE ACROBATA</h3>
-                                <p>Pinguins de Madagascar</p>
-                            </div> <span id="pinguin-span">1,7k 👥</span>
-                        </div>
-                    </section>
-                    <section class="card"> <img class="imagens-direita" src="img/animaisNoZologico/bodeDeitado.png"
-                            alt="Imagem de Bodes">
-                        <div class="overlay"> <img src="img/icones/Messi.png" alt="Messi">
-                            <div>
-                                <h3>O CABA SÓ QUER DESCANSAR</h3>
-                                <p>Lionel Messi</p>
-                            </div> <span>2,1k 👥</span>
-                        </div>
-                    </section>
-                    <section class="card"> <img class="imagens-direita" src="img/animaisNoZologico/bode1.png"
-                            alt="Imagem de Bodes">
-                        <div class="overlay"> <img src="img/icones/cristianoRonaldo.png" alt="Cristiano Ronaldo"
-                                id="img-cr7">
-                            <div>
-                                <h3>Treinamento com Cris Jr</h3>
-                                <p>Cristiano Ronaldo</p>
-                            </div> <span>11,0k 👥</span>
-                        </div>
-                    </section>
-                </div>
-            </figure>
-        </article>
-    </main>
-    <div id="footer"></div>
-    <script> fetch('footer.html').then(response => response.text()).then(data => { document.getElementById('footer').innerHTML = data; }); </script>
-</body>
 
+<div class="chat-container">
+  <div id="mensagens" class="mensagens"></div>
+  <div class="area-input">
+    <input id="entradaMensagem" type="text" placeholder="Digite sua mensagem...">
+    <button id="botaoEnviar">Enviar</button>
+  </div>
+</div>
+
+<script>
+  const elementoMensagens = document.getElementById("mensagens");
+  const entradaMensagem = document.getElementById("entradaMensagem");
+  const botaoEnviar = document.getElementById("botaoEnviar");
+
+  // Lista de usuários e mensagens aleatórias
+  const usuarios = ["Ana", "Bruno", "Carlos", "Duda", "Enzo", "Fernanda", "Gustavo", "Helena"];
+  const mensagensAleatorias = [
+    "Que legal isso!",
+    "Eu também acho!",  
+    "Hahaha boa!",
+    "Sério mesmo?",
+    "Kkkkkkkk",
+    "Interessante...",
+    "Alguém mais viu isso?",
+    "Top demais!",
+    "Concordo 100%",
+    "Uau 😮"
+  ];
+
+  // Função para criar e mostrar uma mensagem
+  function adicionarMensagem(usuario, texto) {
+    const divMensagem = document.createElement("div");
+    divMensagem.classList.add("mensagem");
+    divMensagem.innerHTML = `<span class="usuario">${usuario}:</span> ${texto}`;
+    elementoMensagens.appendChild(divMensagem);
+    elementoMensagens.scrollTop = elementoMensagens.scrollHeight; // rola pro fim
+  }
+
+  // Quando clicar no botão "Enviar"
+  botaoEnviar.addEventListener("click", () => {
+    const texto = entradaMensagem.value.trim();
+    if (texto === "") return;
+
+    // Adiciona sua mensagem
+    adicionarMensagem("Você", texto);
+    entradaMensagem.value = "";
+
+    // Gera 5 mensagens aleatórias de outras pessoas
+    for (let i = 0; i < 5; i++) {
+      const usuario = usuarios[Math.floor(Math.random() * usuarios.length)];
+      const mensagem = mensagensAleatorias[Math.floor(Math.random() * mensagensAleatorias.length)];
+      setTimeout(() => adicionarMensagem(usuario, mensagem), (i + 1) * 500); // com delay de 0.5s entre elas
+    }
+  });
+
+  // Permite enviar apertando Enter
+  entradaMensagem.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") botaoEnviar.click();
+  });
+</script>
+
+</body>
 </html>

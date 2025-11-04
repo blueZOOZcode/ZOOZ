@@ -1,0 +1,57 @@
+.chat-container {
+    border: 1.5px solid #FF9D00;
+    width: 70vh;
+    height: 90vh;
+    background: #EEEEEE;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -50.3vh;
+}
+
+.mensagens {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.mensagem {
+    background: #EEEEEE;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.usuario {
+    font-weight: bold;
+    color: #08685a;
+}
+
+.area-input {
+    height: 7vh;
+    display: flex;
+    border-top: 1px solid #444;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #EEEEEE;
+    color: #000;
+    outline: none;
+}
+
+#botaoEnviar {
+    background: #FFA500;
+    border: none;
+    color: #000;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#botaoEnviar:hover {
+    background: #FFA500;
+}
