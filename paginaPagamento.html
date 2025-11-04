@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+
+    <style>
+        *{
+            
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #buscar {
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            gap: 10px; 
+            margin: 0 auto; 
+        }
+        nav {
+            padding-bottom: 30px;
+        }
+
+        .coluna {
+            flex: 1;
+            width: 100%;
+            padding: 0 20px;
+
+
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+        }
+        #formulario{
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+        
+
+        main {
+            min-height: 840px;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .blocoLaraja{
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 8px black;
+            margin-top: 5vh;
+        
+            
+        }
+        .quadrado-atras {
+            height: 70vh;
+            background-color: #FFC466;
+        }
+        .blocoverde{
+            background-color: green;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 8px black;
+            margin-top: 5vh;
+        
+            
+        }
+        
+        
+       
+
+        
+
+
+       
+      
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <ul>
+                <li><a href="index.html"><img id="imagemLogo" src="img/logoZooZ-Photoroom.png" alt="Logo ZooZ"></a></li>
+                <li class="texto-header"><a href="paginaFavoritos.html">Favoritos</a></li>
+                <li class="texto-header"><a href="index.html">Inicio</a></li>
+                <nav id="buscar">
+                    <form action="" id="formulario"> 
+                        <input type="text" class="idbusca" id="escolha-pais" placeholder="📍Animal/País">
+                        <button id="botao-buscar" type="submit">🔍Buscar</button>
+                        <h1 id="textoMain"></h1>
+                    </form>
+                </nav>
+                
+                <li id="last"><a href="paginaPerfil.html"><img id="icone-avatar" src="img/animais/ZebraFundoClean.png"
+                alt="Imagem Zebra"></a> </li>
+            </ul>
+        </section>
+    </header>
+    
+    <main>
+        <article>
+            <figure class="quadrado-atras">
+                <aside class="container">
+                   
+                   
+                    <section class="blocoLaraja coluna" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img style="width: 6vh; height: 3vh;" src="img/doacao/masterCard.png" alt="master">
+                        <img style="width: 12vh; height: 3vh;" src="img/doacao/visa.png" alt="master">
+                        <p style="font-size: 1.4em; margin-left: 2vh;">Pague com boleto</p>
+                        
+                        
+                    </section>
+                    
+                    <section class="coluna blocoLaraja" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                        <img style="width: 4vh; height: 4vh;" src="img/doacao/pix.png" alt="">
+                        <p>Pague com o pix!</p>
+                    </section>
+                
+    
+                </aside>
+                <aside class="container">
+                   
+                   
+                    <section class="coluna" style="">
+                        
+                        <img style="width: 35vh; height: 35vh;" src="img/doacao/boleto.png" alt="">
+                        
+                    </section>
+                    
+                    <section class="coluna">
+                        <img src="img/doacao/qr code.png" alt="">
+                       
+                    </section>
+                
+    
+                </aside>
+                <aside class="container">
+                   
+                   
+                    <section class="coluna blocoverde" style="">
+                        
+                       <p style="color: white; font-size: 1.4em;">Gerar boleto</p>
+                        
+                    </section>
+                    
+                    <section class="coluna blocoverde">
+                       <p style="color: white; font-size: 1.4em;">Gerar boleto</p>
+                    </section>
+                
+    
+                </aside>
+                
+            </figure>
+            <p style="text-align: center; color: green; font-size: 6em;">Muito obrigado por doar!</p>
+            
+            
+        </article>
+    </main>
+    <div id="footer"></div>
+    <script src="js/scriptBuscar.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
