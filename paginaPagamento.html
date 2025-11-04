@@ -33,13 +33,12 @@
             flex: 1;
             width: 100%;
             padding: 0 20px;
-
-
             display: flex;
             flex-direction: column; 
             align-items: center; 
             text-align: center; 
         }
+
         #formulario{
             display: flex;
             align-items: center;
@@ -53,40 +52,42 @@
         .container{
             display: flex;
             width: 100%;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
+            /* gap: 9vh; */
         }
         
         .blocoLaraja{
+            /* margin-right: 10vh; */
+            width: 60vh;
             background-color: white;
             padding: 20px;
             border-radius: 20px;
             box-shadow: 1px 1px 8px black;
             margin-top: 5vh;
-        
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
+
         .quadrado-atras {
             height: 70vh;
             background-color: #FFC466;
         }
         .blocoverde{
+            width: 60vh;
             background-color: green;
             padding: 20px;
             border-radius: 20px;
             box-shadow: 1px 1px 8px black;
             margin-top: 5vh;
-        
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         
-        
-       
-
-        
-
-
-       
       
 
     </style>
@@ -119,7 +120,7 @@
                 <aside class="container">
                    
                    
-                    <section class="blocoLaraja coluna" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <section class=" blocoLaraja" style="margin-right: 21vh; ">
                         <img style="width: 6vh; height: 3vh;" src="img/doacao/masterCard.png" alt="master">
                         <img style="width: 12vh; height: 3vh;" src="img/doacao/visa.png" alt="master">
                         <p style="font-size: 1.4em; margin-left: 2vh;">Pague com boleto</p>
@@ -127,7 +128,7 @@
                         
                     </section>
                     
-                    <section class="coluna blocoLaraja" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <section class=" blocoLaraja">
                         <img style="width: 4vh; height: 4vh;" src="img/doacao/pix.png" alt="">
                         <p>Pague com o pix!</p>
                     </section>
@@ -137,7 +138,7 @@
                 <aside class="container">
                    
                    
-                    <section class="coluna" style="">
+                    <section class="coluna">
                         
                         <img style="width: 35vh; height: 35vh;" src="img/doacao/boleto.png" alt="">
                         
@@ -153,14 +154,13 @@
                 <aside class="container">
                    
                    
-                    <section class="coluna blocoverde" style="">
-                        
-                       <p style="color: white; font-size: 1.4em;">Gerar boleto</p>
+                    <section class="blocoverde" style="margin-right: 21vh;">
+                       <p style="color: white; font-size: 1.4em;">Gerar Boleto</p>
                         
                     </section>
                     
-                    <section class="coluna blocoverde">
-                       <p style="color: white; font-size: 1.4em;">Gerar boleto</p>
+                    <section class="blocoverde">
+                       <p style="color: white; font-size: 1.4em;">Gerar Pix</p>
                     </section>
                 
     
